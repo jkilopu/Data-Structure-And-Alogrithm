@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Computer-Programming/Learning/List/test/tRsort.c
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+list.h
+C:/Computer-Programming/Learning/List/test/list.h
+Rsort.h
+C:/Computer-Programming/Learning/List/test/Rsort.h
+
+C:/Computer-Programming/inc/list.h
+stdio.h
+-
+stdlib.h
+-
+
+C:/Computer-Programming/inc/rsort.h
+list.h
+C:/Computer-Programming/inc/list.h
+

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Computer-Programming/Learning/List/test/3-4-5tL1L2.c
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+list.h
+C:/Computer-Programming/Learning/List/test/list.h
+
+C:/Computer-Programming/inc/list.h
+stdio.h
+-
+stdlib.h
+-
+
