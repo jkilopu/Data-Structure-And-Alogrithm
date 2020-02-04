@@ -48,10 +48,10 @@ RM = "C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Computer-Programming/Learning/List
+CMAKE_SOURCE_DIR = C:/Data-Structure-And-Alogrithm/Learning/List
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Computer-Programming/Learning/List/build
+CMAKE_BINARY_DIR = C:/Data-Structure-And-Alogrithm/Learning/List/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd C:/Computer-Programming/Learning/List/build && $(CMAKE_COMMAND) -E cmake_progress_start C:/Computer-Programming/Learning/List/build/CMakeFiles C:/Computer-Programming/Learning/List/build/all/CMakeFiles/progress.marks
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 all/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Computer-Programming/Learning/List/build/CMakeFiles 0
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles C:/Data-Structure-And-Alogrithm/Learning/List/build/all/CMakeFiles/progress.marks
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 all/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 all/clean
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 all/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 all/preinstall
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 all/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 all/preinstall
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 all/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd C:/Computer-Programming/Learning/List/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 all/CMakeFiles/myc.dir/rule:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 all/CMakeFiles/myc.dir/rule
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 all/CMakeFiles/myc.dir/rule
 .PHONY : all/CMakeFiles/myc.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ myc: all/CMakeFiles/myc.dir/rule
 
 # fast build rule for target.
 myc/fast:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/build
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/build
 .PHONY : myc/fast
 
 doubly-list.obj: doubly-list.c.obj
@@ -131,7 +131,7 @@ doubly-list.obj: doubly-list.c.obj
 
 # target to build an object file
 doubly-list.c.obj:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/doubly-list.c.obj
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/doubly-list.c.obj
 .PHONY : doubly-list.c.obj
 
 doubly-list.i: doubly-list.c.i
@@ -140,7 +140,7 @@ doubly-list.i: doubly-list.c.i
 
 # target to preprocess a source file
 doubly-list.c.i:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/doubly-list.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/doubly-list.c.i
 .PHONY : doubly-list.c.i
 
 doubly-list.s: doubly-list.c.s
@@ -149,7 +149,7 @@ doubly-list.s: doubly-list.c.s
 
 # target to generate assembly for a file
 doubly-list.c.s:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/doubly-list.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/doubly-list.c.s
 .PHONY : doubly-list.c.s
 
 list.obj: list.c.obj
@@ -158,7 +158,7 @@ list.obj: list.c.obj
 
 # target to build an object file
 list.c.obj:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/list.c.obj
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/list.c.obj
 .PHONY : list.c.obj
 
 list.i: list.c.i
@@ -167,7 +167,7 @@ list.i: list.c.i
 
 # target to preprocess a source file
 list.c.i:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/list.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/list.c.i
 .PHONY : list.c.i
 
 list.s: list.c.s
@@ -176,7 +176,7 @@ list.s: list.c.s
 
 # target to generate assembly for a file
 list.c.s:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/list.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/list.c.s
 .PHONY : list.c.s
 
 polynomial.obj: polynomial.c.obj
@@ -185,7 +185,7 @@ polynomial.obj: polynomial.c.obj
 
 # target to build an object file
 polynomial.c.obj:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/polynomial.c.obj
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/polynomial.c.obj
 .PHONY : polynomial.c.obj
 
 polynomial.i: polynomial.c.i
@@ -194,7 +194,7 @@ polynomial.i: polynomial.c.i
 
 # target to preprocess a source file
 polynomial.c.i:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/polynomial.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/polynomial.c.i
 .PHONY : polynomial.c.i
 
 polynomial.s: polynomial.c.s
@@ -203,7 +203,7 @@ polynomial.s: polynomial.c.s
 
 # target to generate assembly for a file
 polynomial.c.s:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/polynomial.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/polynomial.c.s
 .PHONY : polynomial.c.s
 
 queue.obj: queue.c.obj
@@ -212,7 +212,7 @@ queue.obj: queue.c.obj
 
 # target to build an object file
 queue.c.obj:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/queue.c.obj
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/queue.c.obj
 .PHONY : queue.c.obj
 
 queue.i: queue.c.i
@@ -221,7 +221,7 @@ queue.i: queue.c.i
 
 # target to preprocess a source file
 queue.c.i:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/queue.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/queue.c.i
 .PHONY : queue.c.i
 
 queue.s: queue.c.s
@@ -230,7 +230,7 @@ queue.s: queue.c.s
 
 # target to generate assembly for a file
 queue.c.s:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/queue.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/queue.c.s
 .PHONY : queue.c.s
 
 rsort.obj: rsort.c.obj
@@ -239,7 +239,7 @@ rsort.obj: rsort.c.obj
 
 # target to build an object file
 rsort.c.obj:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/rsort.c.obj
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/rsort.c.obj
 .PHONY : rsort.c.obj
 
 rsort.i: rsort.c.i
@@ -248,7 +248,7 @@ rsort.i: rsort.c.i
 
 # target to preprocess a source file
 rsort.c.i:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/rsort.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/rsort.c.i
 .PHONY : rsort.c.i
 
 rsort.s: rsort.c.s
@@ -257,7 +257,7 @@ rsort.s: rsort.c.s
 
 # target to generate assembly for a file
 rsort.c.s:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/rsort.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/rsort.c.s
 .PHONY : rsort.c.s
 
 stackar.obj: stackar.c.obj
@@ -266,7 +266,7 @@ stackar.obj: stackar.c.obj
 
 # target to build an object file
 stackar.c.obj:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/stackar.c.obj
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/stackar.c.obj
 .PHONY : stackar.c.obj
 
 stackar.i: stackar.c.i
@@ -275,7 +275,7 @@ stackar.i: stackar.c.i
 
 # target to preprocess a source file
 stackar.c.i:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/stackar.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/stackar.c.i
 .PHONY : stackar.c.i
 
 stackar.s: stackar.c.s
@@ -284,7 +284,7 @@ stackar.s: stackar.c.s
 
 # target to generate assembly for a file
 stackar.c.s:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/stackar.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/stackar.c.s
 .PHONY : stackar.c.s
 
 # Help Target
@@ -325,6 +325,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd C:/Computer-Programming/Learning/List/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

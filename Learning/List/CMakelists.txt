@@ -11,11 +11,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 #设置输出路径
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
-set(LIBRARY_OUTPUT_PATH C:/Computer-Programming/lib)
+set(LIBRARY_OUTPUT_PATH C:/Data-Structure-And-Alogrithm/lib)
 
 # 头文件路径
-include_directories(C:/Computer-Programming/inc)
+include_directories(C:/Data-Structure-And-Alogrithm/inc)
 
 #添加子目录，使子目录中的CMakelists.txt被执行
 add_subdirectory(test)
-add_subdirectory(C:/Computer-Programming/src all)   #外部文件夹要多一个参数，这里在内部创建了一个名为all的文件夹
+add_subdirectory(C:/Data-Structure-And-Alogrithm/src all)   #外部文件夹要多一个参数，这里在内部创建了一个名为all的文件夹

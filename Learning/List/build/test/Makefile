@@ -48,10 +48,10 @@ RM = "C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Computer-Programming/Learning/List
+CMAKE_SOURCE_DIR = C:/Data-Structure-And-Alogrithm/Learning/List
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Computer-Programming/Learning/List/build
+CMAKE_BINARY_DIR = C:/Data-Structure-And-Alogrithm/Learning/List/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd C:/Computer-Programming/Learning/List/build && $(CMAKE_COMMAND) -E cmake_progress_start C:/Computer-Programming/Learning/List/build/CMakeFiles C:/Computer-Programming/Learning/List/build/test/CMakeFiles/progress.marks
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Computer-Programming/Learning/List/build/CMakeFiles 0
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles C:/Data-Structure-And-Alogrithm/Learning/List/build/test/CMakeFiles/progress.marks
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/clean
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd C:/Computer-Programming/Learning/List/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/CMakeFiles/3-2.dir/rule:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/3-2.dir/rule
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/3-2.dir/rule
 .PHONY : test/CMakeFiles/3-2.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ test/CMakeFiles/3-2.dir/rule:
 
 # fast build rule for target.
 3-2/fast:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-2.dir/build.make test/CMakeFiles/3-2.dir/build
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-2.dir/build.make test/CMakeFiles/3-2.dir/build
 .PHONY : 3-2/fast
 
 # Convenience name for target.
 test/CMakeFiles/tmp.dir/rule:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tmp.dir/rule
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tmp.dir/rule
 .PHONY : test/CMakeFiles/tmp.dir/rule
 
 # Convenience name for target.
@@ -137,12 +137,12 @@ tmp: test/CMakeFiles/tmp.dir/rule
 
 # fast build rule for target.
 tmp/fast:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/tmp.dir/build.make test/CMakeFiles/tmp.dir/build
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/tmp.dir/build.make test/CMakeFiles/tmp.dir/build
 .PHONY : tmp/fast
 
 # Convenience name for target.
 test/CMakeFiles/3-6-tPolynomial.dir/rule:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/3-6-tPolynomial.dir/rule
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/3-6-tPolynomial.dir/rule
 .PHONY : test/CMakeFiles/3-6-tPolynomial.dir/rule
 
 # Convenience name for target.
@@ -152,12 +152,12 @@ test/CMakeFiles/3-6-tPolynomial.dir/rule:
 
 # fast build rule for target.
 3-6-tPolynomial/fast:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-6-tPolynomial.dir/build.make test/CMakeFiles/3-6-tPolynomial.dir/build
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-6-tPolynomial.dir/build.make test/CMakeFiles/3-6-tPolynomial.dir/build
 .PHONY : 3-6-tPolynomial/fast
 
 # Convenience name for target.
 test/CMakeFiles/3-4-5tL1L2.dir/rule:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/3-4-5tL1L2.dir/rule
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/3-4-5tL1L2.dir/rule
 .PHONY : test/CMakeFiles/3-4-5tL1L2.dir/rule
 
 # Convenience name for target.
@@ -167,12 +167,12 @@ test/CMakeFiles/3-4-5tL1L2.dir/rule:
 
 # fast build rule for target.
 3-4-5tL1L2/fast:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-4-5tL1L2.dir/build.make test/CMakeFiles/3-4-5tL1L2.dir/build
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-4-5tL1L2.dir/build.make test/CMakeFiles/3-4-5tL1L2.dir/build
 .PHONY : 3-4-5tL1L2/fast
 
 # Convenience name for target.
 test/CMakeFiles/3-3-swap.dir/rule:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/3-3-swap.dir/rule
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/3-3-swap.dir/rule
 .PHONY : test/CMakeFiles/3-3-swap.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ test/CMakeFiles/3-3-swap.dir/rule:
 
 # fast build rule for target.
 3-3-swap/fast:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-3-swap.dir/build.make test/CMakeFiles/3-3-swap.dir/build
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-3-swap.dir/build.make test/CMakeFiles/3-3-swap.dir/build
 .PHONY : 3-3-swap/fast
 
 # Convenience name for target.
 test/CMakeFiles/tRsort.dir/rule:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tRsort.dir/rule
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tRsort.dir/rule
 .PHONY : test/CMakeFiles/tRsort.dir/rule
 
 # Convenience name for target.
@@ -197,12 +197,12 @@ tRsort: test/CMakeFiles/tRsort.dir/rule
 
 # fast build rule for target.
 tRsort/fast:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/tRsort.dir/build.make test/CMakeFiles/tRsort.dir/build
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/tRsort.dir/build.make test/CMakeFiles/tRsort.dir/build
 .PHONY : tRsort/fast
 
 # Convenience name for target.
 test/CMakeFiles/FactorialSum.dir/rule:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/FactorialSum.dir/rule
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/FactorialSum.dir/rule
 .PHONY : test/CMakeFiles/FactorialSum.dir/rule
 
 # Convenience name for target.
@@ -212,12 +212,12 @@ FactorialSum: test/CMakeFiles/FactorialSum.dir/rule
 
 # fast build rule for target.
 FactorialSum/fast:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/FactorialSum.dir/build.make test/CMakeFiles/FactorialSum.dir/build
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/FactorialSum.dir/build.make test/CMakeFiles/FactorialSum.dir/build
 .PHONY : FactorialSum/fast
 
 # Convenience name for target.
 test/CMakeFiles/tDlist.dir/rule:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tDlist.dir/rule
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tDlist.dir/rule
 .PHONY : test/CMakeFiles/tDlist.dir/rule
 
 # Convenience name for target.
@@ -227,7 +227,7 @@ tDlist: test/CMakeFiles/tDlist.dir/rule
 
 # fast build rule for target.
 tDlist/fast:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/tDlist.dir/build.make test/CMakeFiles/tDlist.dir/build
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/tDlist.dir/build.make test/CMakeFiles/tDlist.dir/build
 .PHONY : tDlist/fast
 
 3-2.obj: 3-2.c.obj
@@ -236,7 +236,7 @@ tDlist/fast:
 
 # target to build an object file
 3-2.c.obj:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-2.dir/build.make test/CMakeFiles/3-2.dir/3-2.c.obj
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-2.dir/build.make test/CMakeFiles/3-2.dir/3-2.c.obj
 .PHONY : 3-2.c.obj
 
 3-2.i: 3-2.c.i
@@ -245,7 +245,7 @@ tDlist/fast:
 
 # target to preprocess a source file
 3-2.c.i:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-2.dir/build.make test/CMakeFiles/3-2.dir/3-2.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-2.dir/build.make test/CMakeFiles/3-2.dir/3-2.c.i
 .PHONY : 3-2.c.i
 
 3-2.s: 3-2.c.s
@@ -254,7 +254,7 @@ tDlist/fast:
 
 # target to generate assembly for a file
 3-2.c.s:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-2.dir/build.make test/CMakeFiles/3-2.dir/3-2.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-2.dir/build.make test/CMakeFiles/3-2.dir/3-2.c.s
 .PHONY : 3-2.c.s
 
 3-3-swap.obj: 3-3-swap.c.obj
@@ -263,7 +263,7 @@ tDlist/fast:
 
 # target to build an object file
 3-3-swap.c.obj:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-3-swap.dir/build.make test/CMakeFiles/3-3-swap.dir/3-3-swap.c.obj
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-3-swap.dir/build.make test/CMakeFiles/3-3-swap.dir/3-3-swap.c.obj
 .PHONY : 3-3-swap.c.obj
 
 3-3-swap.i: 3-3-swap.c.i
@@ -272,7 +272,7 @@ tDlist/fast:
 
 # target to preprocess a source file
 3-3-swap.c.i:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-3-swap.dir/build.make test/CMakeFiles/3-3-swap.dir/3-3-swap.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-3-swap.dir/build.make test/CMakeFiles/3-3-swap.dir/3-3-swap.c.i
 .PHONY : 3-3-swap.c.i
 
 3-3-swap.s: 3-3-swap.c.s
@@ -281,7 +281,7 @@ tDlist/fast:
 
 # target to generate assembly for a file
 3-3-swap.c.s:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-3-swap.dir/build.make test/CMakeFiles/3-3-swap.dir/3-3-swap.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-3-swap.dir/build.make test/CMakeFiles/3-3-swap.dir/3-3-swap.c.s
 .PHONY : 3-3-swap.c.s
 
 3-4-5tL1L2.obj: 3-4-5tL1L2.c.obj
@@ -290,7 +290,7 @@ tDlist/fast:
 
 # target to build an object file
 3-4-5tL1L2.c.obj:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-4-5tL1L2.dir/build.make test/CMakeFiles/3-4-5tL1L2.dir/3-4-5tL1L2.c.obj
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-4-5tL1L2.dir/build.make test/CMakeFiles/3-4-5tL1L2.dir/3-4-5tL1L2.c.obj
 .PHONY : 3-4-5tL1L2.c.obj
 
 3-4-5tL1L2.i: 3-4-5tL1L2.c.i
@@ -299,7 +299,7 @@ tDlist/fast:
 
 # target to preprocess a source file
 3-4-5tL1L2.c.i:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-4-5tL1L2.dir/build.make test/CMakeFiles/3-4-5tL1L2.dir/3-4-5tL1L2.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-4-5tL1L2.dir/build.make test/CMakeFiles/3-4-5tL1L2.dir/3-4-5tL1L2.c.i
 .PHONY : 3-4-5tL1L2.c.i
 
 3-4-5tL1L2.s: 3-4-5tL1L2.c.s
@@ -308,7 +308,7 @@ tDlist/fast:
 
 # target to generate assembly for a file
 3-4-5tL1L2.c.s:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-4-5tL1L2.dir/build.make test/CMakeFiles/3-4-5tL1L2.dir/3-4-5tL1L2.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-4-5tL1L2.dir/build.make test/CMakeFiles/3-4-5tL1L2.dir/3-4-5tL1L2.c.s
 .PHONY : 3-4-5tL1L2.c.s
 
 3-6-tPolynomial.obj: 3-6-tPolynomial.c.obj
@@ -317,7 +317,7 @@ tDlist/fast:
 
 # target to build an object file
 3-6-tPolynomial.c.obj:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-6-tPolynomial.dir/build.make test/CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.obj
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-6-tPolynomial.dir/build.make test/CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.obj
 .PHONY : 3-6-tPolynomial.c.obj
 
 3-6-tPolynomial.i: 3-6-tPolynomial.c.i
@@ -326,7 +326,7 @@ tDlist/fast:
 
 # target to preprocess a source file
 3-6-tPolynomial.c.i:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-6-tPolynomial.dir/build.make test/CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-6-tPolynomial.dir/build.make test/CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.i
 .PHONY : 3-6-tPolynomial.c.i
 
 3-6-tPolynomial.s: 3-6-tPolynomial.c.s
@@ -335,7 +335,7 @@ tDlist/fast:
 
 # target to generate assembly for a file
 3-6-tPolynomial.c.s:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-6-tPolynomial.dir/build.make test/CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-6-tPolynomial.dir/build.make test/CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.s
 .PHONY : 3-6-tPolynomial.c.s
 
 FactorialSum.obj: FactorialSum.c.obj
@@ -344,7 +344,7 @@ FactorialSum.obj: FactorialSum.c.obj
 
 # target to build an object file
 FactorialSum.c.obj:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/FactorialSum.dir/build.make test/CMakeFiles/FactorialSum.dir/FactorialSum.c.obj
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/FactorialSum.dir/build.make test/CMakeFiles/FactorialSum.dir/FactorialSum.c.obj
 .PHONY : FactorialSum.c.obj
 
 FactorialSum.i: FactorialSum.c.i
@@ -353,7 +353,7 @@ FactorialSum.i: FactorialSum.c.i
 
 # target to preprocess a source file
 FactorialSum.c.i:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/FactorialSum.dir/build.make test/CMakeFiles/FactorialSum.dir/FactorialSum.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/FactorialSum.dir/build.make test/CMakeFiles/FactorialSum.dir/FactorialSum.c.i
 .PHONY : FactorialSum.c.i
 
 FactorialSum.s: FactorialSum.c.s
@@ -362,7 +362,7 @@ FactorialSum.s: FactorialSum.c.s
 
 # target to generate assembly for a file
 FactorialSum.c.s:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/FactorialSum.dir/build.make test/CMakeFiles/FactorialSum.dir/FactorialSum.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/FactorialSum.dir/build.make test/CMakeFiles/FactorialSum.dir/FactorialSum.c.s
 .PHONY : FactorialSum.c.s
 
 tDlist.obj: tDlist.c.obj
@@ -371,7 +371,7 @@ tDlist.obj: tDlist.c.obj
 
 # target to build an object file
 tDlist.c.obj:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/tDlist.dir/build.make test/CMakeFiles/tDlist.dir/tDlist.c.obj
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/tDlist.dir/build.make test/CMakeFiles/tDlist.dir/tDlist.c.obj
 .PHONY : tDlist.c.obj
 
 tDlist.i: tDlist.c.i
@@ -380,7 +380,7 @@ tDlist.i: tDlist.c.i
 
 # target to preprocess a source file
 tDlist.c.i:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/tDlist.dir/build.make test/CMakeFiles/tDlist.dir/tDlist.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/tDlist.dir/build.make test/CMakeFiles/tDlist.dir/tDlist.c.i
 .PHONY : tDlist.c.i
 
 tDlist.s: tDlist.c.s
@@ -389,7 +389,7 @@ tDlist.s: tDlist.c.s
 
 # target to generate assembly for a file
 tDlist.c.s:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/tDlist.dir/build.make test/CMakeFiles/tDlist.dir/tDlist.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/tDlist.dir/build.make test/CMakeFiles/tDlist.dir/tDlist.c.s
 .PHONY : tDlist.c.s
 
 tRsort.obj: tRsort.c.obj
@@ -398,7 +398,7 @@ tRsort.obj: tRsort.c.obj
 
 # target to build an object file
 tRsort.c.obj:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/tRsort.dir/build.make test/CMakeFiles/tRsort.dir/tRsort.c.obj
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/tRsort.dir/build.make test/CMakeFiles/tRsort.dir/tRsort.c.obj
 .PHONY : tRsort.c.obj
 
 tRsort.i: tRsort.c.i
@@ -407,7 +407,7 @@ tRsort.i: tRsort.c.i
 
 # target to preprocess a source file
 tRsort.c.i:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/tRsort.dir/build.make test/CMakeFiles/tRsort.dir/tRsort.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/tRsort.dir/build.make test/CMakeFiles/tRsort.dir/tRsort.c.i
 .PHONY : tRsort.c.i
 
 tRsort.s: tRsort.c.s
@@ -416,7 +416,7 @@ tRsort.s: tRsort.c.s
 
 # target to generate assembly for a file
 tRsort.c.s:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/tRsort.dir/build.make test/CMakeFiles/tRsort.dir/tRsort.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/tRsort.dir/build.make test/CMakeFiles/tRsort.dir/tRsort.c.s
 .PHONY : tRsort.c.s
 
 tmp.obj: tmp.c.obj
@@ -425,7 +425,7 @@ tmp.obj: tmp.c.obj
 
 # target to build an object file
 tmp.c.obj:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/tmp.dir/build.make test/CMakeFiles/tmp.dir/tmp.c.obj
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/tmp.dir/build.make test/CMakeFiles/tmp.dir/tmp.c.obj
 .PHONY : tmp.c.obj
 
 tmp.i: tmp.c.i
@@ -434,7 +434,7 @@ tmp.i: tmp.c.i
 
 # target to preprocess a source file
 tmp.c.i:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/tmp.dir/build.make test/CMakeFiles/tmp.dir/tmp.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/tmp.dir/build.make test/CMakeFiles/tmp.dir/tmp.c.i
 .PHONY : tmp.c.i
 
 tmp.s: tmp.c.s
@@ -443,7 +443,7 @@ tmp.s: tmp.c.s
 
 # target to generate assembly for a file
 tmp.c.s:
-	cd C:/Computer-Programming/Learning/List/build && $(MAKE) -f test/CMakeFiles/tmp.dir/build.make test/CMakeFiles/tmp.dir/tmp.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/tmp.dir/build.make test/CMakeFiles/tmp.dir/tmp.c.s
 .PHONY : tmp.c.s
 
 # Help Target
@@ -497,6 +497,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd C:/Computer-Programming/Learning/List/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

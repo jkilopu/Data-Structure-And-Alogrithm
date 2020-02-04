@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Computer-Programming/Learning/List/test/3-3-swap.c
+C:/Data-Structure-And-Alogrithm/Learning/List/test/3-3-swap.c
 stdio.h
 -
 list.h
-C:/Computer-Programming/Learning/List/test/list.h
+C:/Data-Structure-And-Alogrithm/Learning/List/test/list.h
 doubly-list.h
-C:/Computer-Programming/Learning/List/test/doubly-list.h
+C:/Data-Structure-And-Alogrithm/Learning/List/test/doubly-list.h
 
-C:/Computer-Programming/inc/doubly-list.h
+C:/Data-Structure-And-Alogrithm/inc/doubly-list.h
 stdbool.h
 -
 
-C:/Computer-Programming/inc/list.h
+C:/Data-Structure-And-Alogrithm/inc/list.h
 stdio.h
 -
 stdlib.h

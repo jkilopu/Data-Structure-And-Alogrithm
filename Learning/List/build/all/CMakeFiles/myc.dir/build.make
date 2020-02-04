@@ -43,10 +43,10 @@ RM = "C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Computer-Programming/Learning/List
+CMAKE_SOURCE_DIR = C:/Data-Structure-And-Alogrithm/Learning/List
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Computer-Programming/Learning/List/build
+CMAKE_BINARY_DIR = C:/Data-Structure-And-Alogrithm/Learning/List/build
 
 # Include any dependencies generated for this target.
 include all/CMakeFiles/myc.dir/depend.make
@@ -59,87 +59,87 @@ include all/CMakeFiles/myc.dir/flags.make
 
 all/CMakeFiles/myc.dir/doubly-list.c.obj: all/CMakeFiles/myc.dir/flags.make
 all/CMakeFiles/myc.dir/doubly-list.c.obj: all/CMakeFiles/myc.dir/includes_C.rsp
-all/CMakeFiles/myc.dir/doubly-list.c.obj: C:/Computer-Programming/src/doubly-list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Computer-Programming/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object all/CMakeFiles/myc.dir/doubly-list.c.obj"
-	cd C:/Computer-Programming/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myc.dir/doubly-list.c.obj   -c C:/Computer-Programming/src/doubly-list.c
+all/CMakeFiles/myc.dir/doubly-list.c.obj: C:/Data-Structure-And-Alogrithm/src/doubly-list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object all/CMakeFiles/myc.dir/doubly-list.c.obj"
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myc.dir/doubly-list.c.obj   -c C:/Data-Structure-And-Alogrithm/src/doubly-list.c
 
 all/CMakeFiles/myc.dir/doubly-list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/myc.dir/doubly-list.c.i"
-	cd C:/Computer-Programming/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Computer-Programming/src/doubly-list.c > CMakeFiles/myc.dir/doubly-list.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Data-Structure-And-Alogrithm/src/doubly-list.c > CMakeFiles/myc.dir/doubly-list.c.i
 
 all/CMakeFiles/myc.dir/doubly-list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/myc.dir/doubly-list.c.s"
-	cd C:/Computer-Programming/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Computer-Programming/src/doubly-list.c -o CMakeFiles/myc.dir/doubly-list.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Data-Structure-And-Alogrithm/src/doubly-list.c -o CMakeFiles/myc.dir/doubly-list.c.s
 
 all/CMakeFiles/myc.dir/list.c.obj: all/CMakeFiles/myc.dir/flags.make
 all/CMakeFiles/myc.dir/list.c.obj: all/CMakeFiles/myc.dir/includes_C.rsp
-all/CMakeFiles/myc.dir/list.c.obj: C:/Computer-Programming/src/list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Computer-Programming/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object all/CMakeFiles/myc.dir/list.c.obj"
-	cd C:/Computer-Programming/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myc.dir/list.c.obj   -c C:/Computer-Programming/src/list.c
+all/CMakeFiles/myc.dir/list.c.obj: C:/Data-Structure-And-Alogrithm/src/list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object all/CMakeFiles/myc.dir/list.c.obj"
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myc.dir/list.c.obj   -c C:/Data-Structure-And-Alogrithm/src/list.c
 
 all/CMakeFiles/myc.dir/list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/myc.dir/list.c.i"
-	cd C:/Computer-Programming/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Computer-Programming/src/list.c > CMakeFiles/myc.dir/list.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Data-Structure-And-Alogrithm/src/list.c > CMakeFiles/myc.dir/list.c.i
 
 all/CMakeFiles/myc.dir/list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/myc.dir/list.c.s"
-	cd C:/Computer-Programming/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Computer-Programming/src/list.c -o CMakeFiles/myc.dir/list.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Data-Structure-And-Alogrithm/src/list.c -o CMakeFiles/myc.dir/list.c.s
 
 all/CMakeFiles/myc.dir/polynomial.c.obj: all/CMakeFiles/myc.dir/flags.make
 all/CMakeFiles/myc.dir/polynomial.c.obj: all/CMakeFiles/myc.dir/includes_C.rsp
-all/CMakeFiles/myc.dir/polynomial.c.obj: C:/Computer-Programming/src/polynomial.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Computer-Programming/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object all/CMakeFiles/myc.dir/polynomial.c.obj"
-	cd C:/Computer-Programming/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myc.dir/polynomial.c.obj   -c C:/Computer-Programming/src/polynomial.c
+all/CMakeFiles/myc.dir/polynomial.c.obj: C:/Data-Structure-And-Alogrithm/src/polynomial.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object all/CMakeFiles/myc.dir/polynomial.c.obj"
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myc.dir/polynomial.c.obj   -c C:/Data-Structure-And-Alogrithm/src/polynomial.c
 
 all/CMakeFiles/myc.dir/polynomial.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/myc.dir/polynomial.c.i"
-	cd C:/Computer-Programming/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Computer-Programming/src/polynomial.c > CMakeFiles/myc.dir/polynomial.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Data-Structure-And-Alogrithm/src/polynomial.c > CMakeFiles/myc.dir/polynomial.c.i
 
 all/CMakeFiles/myc.dir/polynomial.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/myc.dir/polynomial.c.s"
-	cd C:/Computer-Programming/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Computer-Programming/src/polynomial.c -o CMakeFiles/myc.dir/polynomial.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Data-Structure-And-Alogrithm/src/polynomial.c -o CMakeFiles/myc.dir/polynomial.c.s
 
 all/CMakeFiles/myc.dir/queue.c.obj: all/CMakeFiles/myc.dir/flags.make
 all/CMakeFiles/myc.dir/queue.c.obj: all/CMakeFiles/myc.dir/includes_C.rsp
-all/CMakeFiles/myc.dir/queue.c.obj: C:/Computer-Programming/src/queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Computer-Programming/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object all/CMakeFiles/myc.dir/queue.c.obj"
-	cd C:/Computer-Programming/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myc.dir/queue.c.obj   -c C:/Computer-Programming/src/queue.c
+all/CMakeFiles/myc.dir/queue.c.obj: C:/Data-Structure-And-Alogrithm/src/queue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object all/CMakeFiles/myc.dir/queue.c.obj"
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myc.dir/queue.c.obj   -c C:/Data-Structure-And-Alogrithm/src/queue.c
 
 all/CMakeFiles/myc.dir/queue.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/myc.dir/queue.c.i"
-	cd C:/Computer-Programming/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Computer-Programming/src/queue.c > CMakeFiles/myc.dir/queue.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Data-Structure-And-Alogrithm/src/queue.c > CMakeFiles/myc.dir/queue.c.i
 
 all/CMakeFiles/myc.dir/queue.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/myc.dir/queue.c.s"
-	cd C:/Computer-Programming/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Computer-Programming/src/queue.c -o CMakeFiles/myc.dir/queue.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Data-Structure-And-Alogrithm/src/queue.c -o CMakeFiles/myc.dir/queue.c.s
 
 all/CMakeFiles/myc.dir/rsort.c.obj: all/CMakeFiles/myc.dir/flags.make
 all/CMakeFiles/myc.dir/rsort.c.obj: all/CMakeFiles/myc.dir/includes_C.rsp
-all/CMakeFiles/myc.dir/rsort.c.obj: C:/Computer-Programming/src/rsort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Computer-Programming/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object all/CMakeFiles/myc.dir/rsort.c.obj"
-	cd C:/Computer-Programming/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myc.dir/rsort.c.obj   -c C:/Computer-Programming/src/rsort.c
+all/CMakeFiles/myc.dir/rsort.c.obj: C:/Data-Structure-And-Alogrithm/src/rsort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object all/CMakeFiles/myc.dir/rsort.c.obj"
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myc.dir/rsort.c.obj   -c C:/Data-Structure-And-Alogrithm/src/rsort.c
 
 all/CMakeFiles/myc.dir/rsort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/myc.dir/rsort.c.i"
-	cd C:/Computer-Programming/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Computer-Programming/src/rsort.c > CMakeFiles/myc.dir/rsort.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Data-Structure-And-Alogrithm/src/rsort.c > CMakeFiles/myc.dir/rsort.c.i
 
 all/CMakeFiles/myc.dir/rsort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/myc.dir/rsort.c.s"
-	cd C:/Computer-Programming/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Computer-Programming/src/rsort.c -o CMakeFiles/myc.dir/rsort.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Data-Structure-And-Alogrithm/src/rsort.c -o CMakeFiles/myc.dir/rsort.c.s
 
 all/CMakeFiles/myc.dir/stackar.c.obj: all/CMakeFiles/myc.dir/flags.make
 all/CMakeFiles/myc.dir/stackar.c.obj: all/CMakeFiles/myc.dir/includes_C.rsp
-all/CMakeFiles/myc.dir/stackar.c.obj: C:/Computer-Programming/src/stackar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Computer-Programming/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object all/CMakeFiles/myc.dir/stackar.c.obj"
-	cd C:/Computer-Programming/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myc.dir/stackar.c.obj   -c C:/Computer-Programming/src/stackar.c
+all/CMakeFiles/myc.dir/stackar.c.obj: C:/Data-Structure-And-Alogrithm/src/stackar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object all/CMakeFiles/myc.dir/stackar.c.obj"
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myc.dir/stackar.c.obj   -c C:/Data-Structure-And-Alogrithm/src/stackar.c
 
 all/CMakeFiles/myc.dir/stackar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/myc.dir/stackar.c.i"
-	cd C:/Computer-Programming/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Computer-Programming/src/stackar.c > CMakeFiles/myc.dir/stackar.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Data-Structure-And-Alogrithm/src/stackar.c > CMakeFiles/myc.dir/stackar.c.i
 
 all/CMakeFiles/myc.dir/stackar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/myc.dir/stackar.c.s"
-	cd C:/Computer-Programming/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Computer-Programming/src/stackar.c -o CMakeFiles/myc.dir/stackar.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Data-Structure-And-Alogrithm/src/stackar.c -o CMakeFiles/myc.dir/stackar.c.s
 
 # Object files for target myc
 myc_OBJECTS = \
@@ -161,9 +161,9 @@ lib/libmyc.a: all/CMakeFiles/myc.dir/rsort.c.obj
 lib/libmyc.a: all/CMakeFiles/myc.dir/stackar.c.obj
 lib/libmyc.a: all/CMakeFiles/myc.dir/build.make
 lib/libmyc.a: all/CMakeFiles/myc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/Computer-Programming/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C static library ../lib/libmyc.a"
-	cd C:/Computer-Programming/Learning/List/build/all && $(CMAKE_COMMAND) -P CMakeFiles/myc.dir/cmake_clean_target.cmake
-	cd C:/Computer-Programming/Learning/List/build/all && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myc.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C static library ../lib/libmyc.a"
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && $(CMAKE_COMMAND) -P CMakeFiles/myc.dir/cmake_clean_target.cmake
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 all/CMakeFiles/myc.dir/build: lib/libmyc.a
@@ -171,10 +171,10 @@ all/CMakeFiles/myc.dir/build: lib/libmyc.a
 .PHONY : all/CMakeFiles/myc.dir/build
 
 all/CMakeFiles/myc.dir/clean:
-	cd C:/Computer-Programming/Learning/List/build/all && $(CMAKE_COMMAND) -P CMakeFiles/myc.dir/cmake_clean.cmake
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/all && $(CMAKE_COMMAND) -P CMakeFiles/myc.dir/cmake_clean.cmake
 .PHONY : all/CMakeFiles/myc.dir/clean
 
 all/CMakeFiles/myc.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Computer-Programming/Learning/List C:/Computer-Programming/src C:/Computer-Programming/Learning/List/build C:/Computer-Programming/Learning/List/build/all C:/Computer-Programming/Learning/List/build/all/CMakeFiles/myc.dir/DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Data-Structure-And-Alogrithm/Learning/List C:/Data-Structure-And-Alogrithm/src C:/Data-Structure-And-Alogrithm/Learning/List/build C:/Data-Structure-And-Alogrithm/Learning/List/build/all C:/Data-Structure-And-Alogrithm/Learning/List/build/all/CMakeFiles/myc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : all/CMakeFiles/myc.dir/depend
 

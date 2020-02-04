@@ -43,10 +43,10 @@ RM = "C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Computer-Programming/Learning/List
+CMAKE_SOURCE_DIR = C:/Data-Structure-And-Alogrithm/Learning/List
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Computer-Programming/Learning/List/build
+CMAKE_BINARY_DIR = C:/Data-Structure-And-Alogrithm/Learning/List/build
 
 # Include any dependencies generated for this target.
 include test/CMakeFiles/tRsort.dir/depend.make
@@ -60,16 +60,16 @@ include test/CMakeFiles/tRsort.dir/flags.make
 test/CMakeFiles/tRsort.dir/tRsort.c.obj: test/CMakeFiles/tRsort.dir/flags.make
 test/CMakeFiles/tRsort.dir/tRsort.c.obj: test/CMakeFiles/tRsort.dir/includes_C.rsp
 test/CMakeFiles/tRsort.dir/tRsort.c.obj: ../test/tRsort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Computer-Programming/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/CMakeFiles/tRsort.dir/tRsort.c.obj"
-	cd C:/Computer-Programming/Learning/List/build/test && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tRsort.dir/tRsort.c.obj   -c C:/Computer-Programming/Learning/List/test/tRsort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/CMakeFiles/tRsort.dir/tRsort.c.obj"
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tRsort.dir/tRsort.c.obj   -c C:/Data-Structure-And-Alogrithm/Learning/List/test/tRsort.c
 
 test/CMakeFiles/tRsort.dir/tRsort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tRsort.dir/tRsort.c.i"
-	cd C:/Computer-Programming/Learning/List/build/test && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Computer-Programming/Learning/List/test/tRsort.c > CMakeFiles/tRsort.dir/tRsort.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Data-Structure-And-Alogrithm/Learning/List/test/tRsort.c > CMakeFiles/tRsort.dir/tRsort.c.i
 
 test/CMakeFiles/tRsort.dir/tRsort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tRsort.dir/tRsort.c.s"
-	cd C:/Computer-Programming/Learning/List/build/test && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Computer-Programming/Learning/List/test/tRsort.c -o CMakeFiles/tRsort.dir/tRsort.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Data-Structure-And-Alogrithm/Learning/List/test/tRsort.c -o CMakeFiles/tRsort.dir/tRsort.c.s
 
 # Object files for target tRsort
 tRsort_OBJECTS = \
@@ -83,10 +83,10 @@ bin/tRsort.exe: test/CMakeFiles/tRsort.dir/build.make
 bin/tRsort.exe: lib/libmyc.a
 bin/tRsort.exe: test/CMakeFiles/tRsort.dir/linklibs.rsp
 bin/tRsort.exe: test/CMakeFiles/tRsort.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/Computer-Programming/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../bin/tRsort.exe"
-	cd C:/Computer-Programming/Learning/List/build/test && "C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f CMakeFiles/tRsort.dir/objects.a
-	cd C:/Computer-Programming/Learning/List/build/test && C:/mingw64/bin/ar.exe cr CMakeFiles/tRsort.dir/objects.a @CMakeFiles/tRsort.dir/objects1.rsp
-	cd C:/Computer-Programming/Learning/List/build/test && C:/mingw64/bin/gcc.exe -g   -Wl,--whole-archive CMakeFiles/tRsort.dir/objects.a -Wl,--no-whole-archive  -o ../bin/tRsort.exe -Wl,--out-implib,../bin/libtRsort.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/tRsort.dir/linklibs.rsp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../bin/tRsort.exe"
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && "C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f CMakeFiles/tRsort.dir/objects.a
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && C:/mingw64/bin/ar.exe cr CMakeFiles/tRsort.dir/objects.a @CMakeFiles/tRsort.dir/objects1.rsp
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && C:/mingw64/bin/gcc.exe -g   -Wl,--whole-archive CMakeFiles/tRsort.dir/objects.a -Wl,--no-whole-archive  -o ../bin/tRsort.exe -Wl,--out-implib,../bin/libtRsort.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/tRsort.dir/linklibs.rsp
 
 # Rule to build all files generated by this target.
 test/CMakeFiles/tRsort.dir/build: bin/tRsort.exe
@@ -94,10 +94,10 @@ test/CMakeFiles/tRsort.dir/build: bin/tRsort.exe
 .PHONY : test/CMakeFiles/tRsort.dir/build
 
 test/CMakeFiles/tRsort.dir/clean:
-	cd C:/Computer-Programming/Learning/List/build/test && $(CMAKE_COMMAND) -P CMakeFiles/tRsort.dir/cmake_clean.cmake
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && $(CMAKE_COMMAND) -P CMakeFiles/tRsort.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/tRsort.dir/clean
 
 test/CMakeFiles/tRsort.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Computer-Programming/Learning/List C:/Computer-Programming/Learning/List/test C:/Computer-Programming/Learning/List/build C:/Computer-Programming/Learning/List/build/test C:/Computer-Programming/Learning/List/build/test/CMakeFiles/tRsort.dir/DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Data-Structure-And-Alogrithm/Learning/List C:/Data-Structure-And-Alogrithm/Learning/List/test C:/Data-Structure-And-Alogrithm/Learning/List/build C:/Data-Structure-And-Alogrithm/Learning/List/build/test C:/Data-Structure-And-Alogrithm/Learning/List/build/test/CMakeFiles/tRsort.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/CMakeFiles/tRsort.dir/depend
 

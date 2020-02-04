@@ -1,4 +1,4 @@
-# Install script for directory: C:/Computer-Programming/src
+# Install script for directory: C:/Data-Structure-And-Alogrithm/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

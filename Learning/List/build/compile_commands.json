@@ -1,72 +1,72 @@
 [
 {
-  "directory": "C:/Computer-Programming/Learning/List/build/test",
-  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/3-2.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/3-2.dir/3-2.c.obj   -c C:/Computer-Programming/Learning/List/test/3-2.c",
-  "file": "C:/Computer-Programming/Learning/List/test/3-2.c"
+  "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/test",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/3-2.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/3-2.dir/3-2.c.obj   -c C:/Data-Structure-And-Alogrithm/Learning/List/test/3-2.c",
+  "file": "C:/Data-Structure-And-Alogrithm/Learning/List/test/3-2.c"
 },
 {
-  "directory": "C:/Computer-Programming/Learning/List/build/test",
-  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/tmp.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/tmp.dir/tmp.c.obj   -c C:/Computer-Programming/Learning/List/test/tmp.c",
-  "file": "C:/Computer-Programming/Learning/List/test/tmp.c"
+  "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/test",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/tmp.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/tmp.dir/tmp.c.obj   -c C:/Data-Structure-And-Alogrithm/Learning/List/test/tmp.c",
+  "file": "C:/Data-Structure-And-Alogrithm/Learning/List/test/tmp.c"
 },
 {
-  "directory": "C:/Computer-Programming/Learning/List/build/test",
-  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/3-6-tPolynomial.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.obj   -c C:/Computer-Programming/Learning/List/test/3-6-tPolynomial.c",
-  "file": "C:/Computer-Programming/Learning/List/test/3-6-tPolynomial.c"
+  "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/test",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/3-6-tPolynomial.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.obj   -c C:/Data-Structure-And-Alogrithm/Learning/List/test/3-6-tPolynomial.c",
+  "file": "C:/Data-Structure-And-Alogrithm/Learning/List/test/3-6-tPolynomial.c"
 },
 {
-  "directory": "C:/Computer-Programming/Learning/List/build/test",
-  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/3-4-5tL1L2.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/3-4-5tL1L2.dir/3-4-5tL1L2.c.obj   -c C:/Computer-Programming/Learning/List/test/3-4-5tL1L2.c",
-  "file": "C:/Computer-Programming/Learning/List/test/3-4-5tL1L2.c"
+  "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/test",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/3-4-5tL1L2.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/3-4-5tL1L2.dir/3-4-5tL1L2.c.obj   -c C:/Data-Structure-And-Alogrithm/Learning/List/test/3-4-5tL1L2.c",
+  "file": "C:/Data-Structure-And-Alogrithm/Learning/List/test/3-4-5tL1L2.c"
 },
 {
-  "directory": "C:/Computer-Programming/Learning/List/build/test",
-  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/3-3-swap.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/3-3-swap.dir/3-3-swap.c.obj   -c C:/Computer-Programming/Learning/List/test/3-3-swap.c",
-  "file": "C:/Computer-Programming/Learning/List/test/3-3-swap.c"
+  "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/test",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/3-3-swap.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/3-3-swap.dir/3-3-swap.c.obj   -c C:/Data-Structure-And-Alogrithm/Learning/List/test/3-3-swap.c",
+  "file": "C:/Data-Structure-And-Alogrithm/Learning/List/test/3-3-swap.c"
 },
 {
-  "directory": "C:/Computer-Programming/Learning/List/build/test",
-  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/tRsort.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/tRsort.dir/tRsort.c.obj   -c C:/Computer-Programming/Learning/List/test/tRsort.c",
-  "file": "C:/Computer-Programming/Learning/List/test/tRsort.c"
+  "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/test",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/tRsort.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/tRsort.dir/tRsort.c.obj   -c C:/Data-Structure-And-Alogrithm/Learning/List/test/tRsort.c",
+  "file": "C:/Data-Structure-And-Alogrithm/Learning/List/test/tRsort.c"
 },
 {
-  "directory": "C:/Computer-Programming/Learning/List/build/test",
-  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/FactorialSum.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/FactorialSum.dir/FactorialSum.c.obj   -c C:/Computer-Programming/Learning/List/test/FactorialSum.c",
-  "file": "C:/Computer-Programming/Learning/List/test/FactorialSum.c"
+  "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/test",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/FactorialSum.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/FactorialSum.dir/FactorialSum.c.obj   -c C:/Data-Structure-And-Alogrithm/Learning/List/test/FactorialSum.c",
+  "file": "C:/Data-Structure-And-Alogrithm/Learning/List/test/FactorialSum.c"
 },
 {
-  "directory": "C:/Computer-Programming/Learning/List/build/test",
-  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/tDlist.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/tDlist.dir/tDlist.c.obj   -c C:/Computer-Programming/Learning/List/test/tDlist.c",
-  "file": "C:/Computer-Programming/Learning/List/test/tDlist.c"
+  "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/test",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/tDlist.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/tDlist.dir/tDlist.c.obj   -c C:/Data-Structure-And-Alogrithm/Learning/List/test/tDlist.c",
+  "file": "C:/Data-Structure-And-Alogrithm/Learning/List/test/tDlist.c"
 },
 {
-  "directory": "C:/Computer-Programming/Learning/List/build/all",
-  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/myc.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/myc.dir/doubly-list.c.obj   -c C:/Computer-Programming/src/doubly-list.c",
-  "file": "C:/Computer-Programming/src/doubly-list.c"
+  "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/all",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/myc.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/myc.dir/doubly-list.c.obj   -c C:/Data-Structure-And-Alogrithm/src/doubly-list.c",
+  "file": "C:/Data-Structure-And-Alogrithm/src/doubly-list.c"
 },
 {
-  "directory": "C:/Computer-Programming/Learning/List/build/all",
-  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/myc.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/myc.dir/list.c.obj   -c C:/Computer-Programming/src/list.c",
-  "file": "C:/Computer-Programming/src/list.c"
+  "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/all",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/myc.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/myc.dir/list.c.obj   -c C:/Data-Structure-And-Alogrithm/src/list.c",
+  "file": "C:/Data-Structure-And-Alogrithm/src/list.c"
 },
 {
-  "directory": "C:/Computer-Programming/Learning/List/build/all",
-  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/myc.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/myc.dir/polynomial.c.obj   -c C:/Computer-Programming/src/polynomial.c",
-  "file": "C:/Computer-Programming/src/polynomial.c"
+  "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/all",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/myc.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/myc.dir/polynomial.c.obj   -c C:/Data-Structure-And-Alogrithm/src/polynomial.c",
+  "file": "C:/Data-Structure-And-Alogrithm/src/polynomial.c"
 },
 {
-  "directory": "C:/Computer-Programming/Learning/List/build/all",
-  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/myc.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/myc.dir/queue.c.obj   -c C:/Computer-Programming/src/queue.c",
-  "file": "C:/Computer-Programming/src/queue.c"
+  "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/all",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/myc.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/myc.dir/queue.c.obj   -c C:/Data-Structure-And-Alogrithm/src/queue.c",
+  "file": "C:/Data-Structure-And-Alogrithm/src/queue.c"
 },
 {
-  "directory": "C:/Computer-Programming/Learning/List/build/all",
-  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/myc.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/myc.dir/rsort.c.obj   -c C:/Computer-Programming/src/rsort.c",
-  "file": "C:/Computer-Programming/src/rsort.c"
+  "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/all",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/myc.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/myc.dir/rsort.c.obj   -c C:/Data-Structure-And-Alogrithm/src/rsort.c",
+  "file": "C:/Data-Structure-And-Alogrithm/src/rsort.c"
 },
 {
-  "directory": "C:/Computer-Programming/Learning/List/build/all",
-  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/myc.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/myc.dir/stackar.c.obj   -c C:/Computer-Programming/src/stackar.c",
-  "file": "C:/Computer-Programming/src/stackar.c"
+  "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/all",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/myc.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/myc.dir/stackar.c.obj   -c C:/Data-Structure-And-Alogrithm/src/stackar.c",
+  "file": "C:/Data-Structure-And-Alogrithm/src/stackar.c"
 }
 ]

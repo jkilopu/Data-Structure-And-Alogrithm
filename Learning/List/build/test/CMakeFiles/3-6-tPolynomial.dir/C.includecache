@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Computer-Programming/Learning/List/test/3-6-tPolynomial.c
+C:/Data-Structure-And-Alogrithm/Learning/List/test/3-6-tPolynomial.c
 stdio.h
 -
 polynomial.h
-C:/Computer-Programming/Learning/List/test/polynomial.h
+C:/Data-Structure-And-Alogrithm/Learning/List/test/polynomial.h
 time.h
 -
 
-C:/Computer-Programming/inc/polynomial.h
+C:/Data-Structure-And-Alogrithm/inc/polynomial.h
 stdbool.h
 -
 stdlib.h

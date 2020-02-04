@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Computer-Programming/Learning/List/test/3-2.c
+C:/Data-Structure-And-Alogrithm/Learning/List/test/3-2.c
 stdio.h
 -
 list.h
-C:/Computer-Programming/Learning/List/test/list.h
+C:/Data-Structure-And-Alogrithm/Learning/List/test/list.h
 
-C:/Computer-Programming/inc/list.h
+C:/Data-Structure-And-Alogrithm/inc/list.h
 stdio.h
 -
 stdlib.h

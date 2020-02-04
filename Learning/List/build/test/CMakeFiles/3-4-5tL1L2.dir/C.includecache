@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Computer-Programming/Learning/List/test/3-4-5tL1L2.c
+C:/Data-Structure-And-Alogrithm/Learning/List/test/3-4-5tL1L2.c
 stdio.h
 -
 stdlib.h
@@ -14,9 +14,9 @@ stdlib.h
 stdbool.h
 -
 list.h
-C:/Computer-Programming/Learning/List/test/list.h
+C:/Data-Structure-And-Alogrithm/Learning/List/test/list.h
 
-C:/Computer-Programming/inc/list.h
+C:/Data-Structure-And-Alogrithm/inc/list.h
 stdio.h
 -
 stdlib.h

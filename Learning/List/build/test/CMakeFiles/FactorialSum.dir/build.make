@@ -43,10 +43,10 @@ RM = "C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Computer-Programming/Learning/List
+CMAKE_SOURCE_DIR = C:/Data-Structure-And-Alogrithm/Learning/List
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Computer-Programming/Learning/List/build
+CMAKE_BINARY_DIR = C:/Data-Structure-And-Alogrithm/Learning/List/build
 
 # Include any dependencies generated for this target.
 include test/CMakeFiles/FactorialSum.dir/depend.make
@@ -60,16 +60,16 @@ include test/CMakeFiles/FactorialSum.dir/flags.make
 test/CMakeFiles/FactorialSum.dir/FactorialSum.c.obj: test/CMakeFiles/FactorialSum.dir/flags.make
 test/CMakeFiles/FactorialSum.dir/FactorialSum.c.obj: test/CMakeFiles/FactorialSum.dir/includes_C.rsp
 test/CMakeFiles/FactorialSum.dir/FactorialSum.c.obj: ../test/FactorialSum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Computer-Programming/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/CMakeFiles/FactorialSum.dir/FactorialSum.c.obj"
-	cd C:/Computer-Programming/Learning/List/build/test && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FactorialSum.dir/FactorialSum.c.obj   -c C:/Computer-Programming/Learning/List/test/FactorialSum.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/CMakeFiles/FactorialSum.dir/FactorialSum.c.obj"
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FactorialSum.dir/FactorialSum.c.obj   -c C:/Data-Structure-And-Alogrithm/Learning/List/test/FactorialSum.c
 
 test/CMakeFiles/FactorialSum.dir/FactorialSum.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FactorialSum.dir/FactorialSum.c.i"
-	cd C:/Computer-Programming/Learning/List/build/test && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Computer-Programming/Learning/List/test/FactorialSum.c > CMakeFiles/FactorialSum.dir/FactorialSum.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Data-Structure-And-Alogrithm/Learning/List/test/FactorialSum.c > CMakeFiles/FactorialSum.dir/FactorialSum.c.i
 
 test/CMakeFiles/FactorialSum.dir/FactorialSum.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FactorialSum.dir/FactorialSum.c.s"
-	cd C:/Computer-Programming/Learning/List/build/test && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Computer-Programming/Learning/List/test/FactorialSum.c -o CMakeFiles/FactorialSum.dir/FactorialSum.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Data-Structure-And-Alogrithm/Learning/List/test/FactorialSum.c -o CMakeFiles/FactorialSum.dir/FactorialSum.c.s
 
 # Object files for target FactorialSum
 FactorialSum_OBJECTS = \
@@ -83,10 +83,10 @@ bin/FactorialSum.exe: test/CMakeFiles/FactorialSum.dir/build.make
 bin/FactorialSum.exe: lib/libmyc.a
 bin/FactorialSum.exe: test/CMakeFiles/FactorialSum.dir/linklibs.rsp
 bin/FactorialSum.exe: test/CMakeFiles/FactorialSum.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/Computer-Programming/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../bin/FactorialSum.exe"
-	cd C:/Computer-Programming/Learning/List/build/test && "C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f CMakeFiles/FactorialSum.dir/objects.a
-	cd C:/Computer-Programming/Learning/List/build/test && C:/mingw64/bin/ar.exe cr CMakeFiles/FactorialSum.dir/objects.a @CMakeFiles/FactorialSum.dir/objects1.rsp
-	cd C:/Computer-Programming/Learning/List/build/test && C:/mingw64/bin/gcc.exe -g   -Wl,--whole-archive CMakeFiles/FactorialSum.dir/objects.a -Wl,--no-whole-archive  -o ../bin/FactorialSum.exe -Wl,--out-implib,../bin/libFactorialSum.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/FactorialSum.dir/linklibs.rsp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../bin/FactorialSum.exe"
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && "C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f CMakeFiles/FactorialSum.dir/objects.a
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && C:/mingw64/bin/ar.exe cr CMakeFiles/FactorialSum.dir/objects.a @CMakeFiles/FactorialSum.dir/objects1.rsp
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && C:/mingw64/bin/gcc.exe -g   -Wl,--whole-archive CMakeFiles/FactorialSum.dir/objects.a -Wl,--no-whole-archive  -o ../bin/FactorialSum.exe -Wl,--out-implib,../bin/libFactorialSum.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/FactorialSum.dir/linklibs.rsp
 
 # Rule to build all files generated by this target.
 test/CMakeFiles/FactorialSum.dir/build: bin/FactorialSum.exe
@@ -94,10 +94,10 @@ test/CMakeFiles/FactorialSum.dir/build: bin/FactorialSum.exe
 .PHONY : test/CMakeFiles/FactorialSum.dir/build
 
 test/CMakeFiles/FactorialSum.dir/clean:
-	cd C:/Computer-Programming/Learning/List/build/test && $(CMAKE_COMMAND) -P CMakeFiles/FactorialSum.dir/cmake_clean.cmake
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && $(CMAKE_COMMAND) -P CMakeFiles/FactorialSum.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/FactorialSum.dir/clean
 
 test/CMakeFiles/FactorialSum.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Computer-Programming/Learning/List C:/Computer-Programming/Learning/List/test C:/Computer-Programming/Learning/List/build C:/Computer-Programming/Learning/List/build/test C:/Computer-Programming/Learning/List/build/test/CMakeFiles/FactorialSum.dir/DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Data-Structure-And-Alogrithm/Learning/List C:/Data-Structure-And-Alogrithm/Learning/List/test C:/Data-Structure-And-Alogrithm/Learning/List/build C:/Data-Structure-And-Alogrithm/Learning/List/build/test C:/Data-Structure-And-Alogrithm/Learning/List/build/test/CMakeFiles/FactorialSum.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/CMakeFiles/FactorialSum.dir/depend
 

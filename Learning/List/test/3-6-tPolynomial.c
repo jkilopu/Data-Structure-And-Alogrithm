@@ -8,25 +8,34 @@ int main(void)
     int i;
     clock_t start, stop;
     double duration;
-    Polynomial po1 = CreatePolynomial(), po2 = CreatePolynomial(), po_sum = CreatePolynomial();
+    Polynomial po1 = CreatePolynomial(), po2 = CreatePolynomial(), po_res = CreatePolynomial();
+    
     for (i = 0; i < sizeof(c1) / sizeof(int); i++)
         PAdd(po1, c1[i], e1[i]);
     for (i = 0; i < sizeof(c2) / sizeof(int); i++)
         PAdd(po2, c2[i], e2[i]);
     PPrint(po1), PPrint(po2);
     puts("##");
-    // PMerge(po1,po2,po_sum);
+    // PMerge(po1,po2,po_res);
+    // start = clock();
+    // PMultiply(po1, po1, po_res);
+    // stop = clock();
+    // duration =  (double)(stop - start) / CLK_TCK;
+    // PPrint(po_res), printf("Time spent:%lf\n", duration);
+
+    // start = clock();
+    // PMultiply(po2, po1, po2);           /* 可以自己乘自己*/
+    // stop = clock();
+    // duration =  (double)(stop - start) / CLK_TCK;
+    // PPrint(po2), printf("Time spent:%lf\n", duration);
+    
     start = clock();
-    PMultiply(po1, po2, po_sum);
+    PPow(po2, 11, po_res);
     stop = clock();
-    duration = (stop - start) / CLK_TCK;
-    printf("Time spent:%lf ## ", duration), PPrint(po_sum);
-    start = clock();
-    PMultiply(po2, po1, po_sum);
-    stop = clock();
-    duration = (stop - start) / CLK_TCK;
-    printf("Time spent:%lf ## ", duration), PPrint(po_sum);
-    PClear(po1), PClear(po2), PClear(po_sum);
+    duration = (double)(stop - start) / CLK_TCK;
+    PPrint(po_res), printf("Time spent: %lf\n", duration);
+    PPrint(po2);        //验证po2没有被改变
+    PClear(po1), PClear(po2), PClear(po_res);
 
     return 0;
 }

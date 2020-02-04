@@ -43,10 +43,10 @@ RM = "C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Computer-Programming/Learning/List
+CMAKE_SOURCE_DIR = C:/Data-Structure-And-Alogrithm/Learning/List
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Computer-Programming/Learning/List/build
+CMAKE_BINARY_DIR = C:/Data-Structure-And-Alogrithm/Learning/List/build
 
 # Include any dependencies generated for this target.
 include test/CMakeFiles/3-6-tPolynomial.dir/depend.make
@@ -60,16 +60,16 @@ include test/CMakeFiles/3-6-tPolynomial.dir/flags.make
 test/CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.obj: test/CMakeFiles/3-6-tPolynomial.dir/flags.make
 test/CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.obj: test/CMakeFiles/3-6-tPolynomial.dir/includes_C.rsp
 test/CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.obj: ../test/3-6-tPolynomial.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Computer-Programming/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.obj"
-	cd C:/Computer-Programming/Learning/List/build/test && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.obj   -c C:/Computer-Programming/Learning/List/test/3-6-tPolynomial.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.obj"
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.obj   -c C:/Data-Structure-And-Alogrithm/Learning/List/test/3-6-tPolynomial.c
 
 test/CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.i"
-	cd C:/Computer-Programming/Learning/List/build/test && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Computer-Programming/Learning/List/test/3-6-tPolynomial.c > CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.i
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Data-Structure-And-Alogrithm/Learning/List/test/3-6-tPolynomial.c > CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.i
 
 test/CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.s"
-	cd C:/Computer-Programming/Learning/List/build/test && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Computer-Programming/Learning/List/test/3-6-tPolynomial.c -o CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.s
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Data-Structure-And-Alogrithm/Learning/List/test/3-6-tPolynomial.c -o CMakeFiles/3-6-tPolynomial.dir/3-6-tPolynomial.c.s
 
 # Object files for target 3-6-tPolynomial
 3__6__tPolynomial_OBJECTS = \
@@ -83,10 +83,10 @@ bin/3-6-tPolynomial.exe: test/CMakeFiles/3-6-tPolynomial.dir/build.make
 bin/3-6-tPolynomial.exe: lib/libmyc.a
 bin/3-6-tPolynomial.exe: test/CMakeFiles/3-6-tPolynomial.dir/linklibs.rsp
 bin/3-6-tPolynomial.exe: test/CMakeFiles/3-6-tPolynomial.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/Computer-Programming/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../bin/3-6-tPolynomial.exe"
-	cd C:/Computer-Programming/Learning/List/build/test && "C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f CMakeFiles/3-6-tPolynomial.dir/objects.a
-	cd C:/Computer-Programming/Learning/List/build/test && C:/mingw64/bin/ar.exe cr CMakeFiles/3-6-tPolynomial.dir/objects.a @CMakeFiles/3-6-tPolynomial.dir/objects1.rsp
-	cd C:/Computer-Programming/Learning/List/build/test && C:/mingw64/bin/gcc.exe -g   -Wl,--whole-archive CMakeFiles/3-6-tPolynomial.dir/objects.a -Wl,--no-whole-archive  -o ../bin/3-6-tPolynomial.exe -Wl,--out-implib,../bin/lib3-6-tPolynomial.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/3-6-tPolynomial.dir/linklibs.rsp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../bin/3-6-tPolynomial.exe"
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && "C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f CMakeFiles/3-6-tPolynomial.dir/objects.a
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && C:/mingw64/bin/ar.exe cr CMakeFiles/3-6-tPolynomial.dir/objects.a @CMakeFiles/3-6-tPolynomial.dir/objects1.rsp
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && C:/mingw64/bin/gcc.exe -g   -Wl,--whole-archive CMakeFiles/3-6-tPolynomial.dir/objects.a -Wl,--no-whole-archive  -o ../bin/3-6-tPolynomial.exe -Wl,--out-implib,../bin/lib3-6-tPolynomial.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/3-6-tPolynomial.dir/linklibs.rsp
 
 # Rule to build all files generated by this target.
 test/CMakeFiles/3-6-tPolynomial.dir/build: bin/3-6-tPolynomial.exe
@@ -94,10 +94,10 @@ test/CMakeFiles/3-6-tPolynomial.dir/build: bin/3-6-tPolynomial.exe
 .PHONY : test/CMakeFiles/3-6-tPolynomial.dir/build
 
 test/CMakeFiles/3-6-tPolynomial.dir/clean:
-	cd C:/Computer-Programming/Learning/List/build/test && $(CMAKE_COMMAND) -P CMakeFiles/3-6-tPolynomial.dir/cmake_clean.cmake
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build/test && $(CMAKE_COMMAND) -P CMakeFiles/3-6-tPolynomial.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/3-6-tPolynomial.dir/clean
 
 test/CMakeFiles/3-6-tPolynomial.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Computer-Programming/Learning/List C:/Computer-Programming/Learning/List/test C:/Computer-Programming/Learning/List/build C:/Computer-Programming/Learning/List/build/test C:/Computer-Programming/Learning/List/build/test/CMakeFiles/3-6-tPolynomial.dir/DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Data-Structure-And-Alogrithm/Learning/List C:/Data-Structure-And-Alogrithm/Learning/List/test C:/Data-Structure-And-Alogrithm/Learning/List/build C:/Data-Structure-And-Alogrithm/Learning/List/build/test C:/Data-Structure-And-Alogrithm/Learning/List/build/test/CMakeFiles/3-6-tPolynomial.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/CMakeFiles/3-6-tPolynomial.dir/depend
 

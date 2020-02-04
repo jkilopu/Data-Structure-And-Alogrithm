@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Computer-Programming/Learning/List/test/tDlist.c
+C:/Data-Structure-And-Alogrithm/Learning/List/test/tDlist.c
 doubly-list.h
-C:/Computer-Programming/Learning/List/test/doubly-list.h
+C:/Data-Structure-And-Alogrithm/Learning/List/test/doubly-list.h
 stdio.h
 -
 
-C:/Computer-Programming/inc/doubly-list.h
+C:/Data-Structure-And-Alogrithm/inc/doubly-list.h
 stdbool.h
 -
 

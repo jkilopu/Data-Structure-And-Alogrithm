@@ -1,4 +1,4 @@
-# Install script for directory: C:/Computer-Programming/Learning/List/test
+# Install script for directory: C:/Data-Structure-And-Alogrithm/Learning/List/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

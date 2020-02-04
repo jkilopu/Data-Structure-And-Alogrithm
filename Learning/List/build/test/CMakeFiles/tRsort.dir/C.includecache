@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Computer-Programming/Learning/List/test/tRsort.c
+C:/Data-Structure-And-Alogrithm/Learning/List/test/tRsort.c
 stdio.h
 -
 stdlib.h
@@ -14,17 +14,17 @@ stdlib.h
 stdbool.h
 -
 list.h
-C:/Computer-Programming/Learning/List/test/list.h
+C:/Data-Structure-And-Alogrithm/Learning/List/test/list.h
 Rsort.h
-C:/Computer-Programming/Learning/List/test/Rsort.h
+C:/Data-Structure-And-Alogrithm/Learning/List/test/Rsort.h
 
-C:/Computer-Programming/inc/list.h
+C:/Data-Structure-And-Alogrithm/inc/list.h
 stdio.h
 -
 stdlib.h
 -
 
-C:/Computer-Programming/inc/rsort.h
+C:/Data-Structure-And-Alogrithm/inc/rsort.h
 list.h
-C:/Computer-Programming/inc/list.h
+C:/Data-Structure-And-Alogrithm/inc/list.h
 
