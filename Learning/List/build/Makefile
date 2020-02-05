@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named 3-10-Josephus-Problem
+
+# Build rule for target.
+3-10-Josephus-Problem: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 3-10-Josephus-Problem
+.PHONY : 3-10-Josephus-Problem
+
+# fast build rule for target.
+3-10-Josephus-Problem/fast:
+	$(MAKE) -f test/CMakeFiles/3-10-Josephus-Problem.dir/build.make test/CMakeFiles/3-10-Josephus-Problem.dir/build
+.PHONY : 3-10-Josephus-Problem/fast
+
+#=============================================================================
 # Target rules for targets named 3-2
 
 # Build rule for target.
@@ -122,19 +135,6 @@ depend:
 3-2/fast:
 	$(MAKE) -f test/CMakeFiles/3-2.dir/build.make test/CMakeFiles/3-2.dir/build
 .PHONY : 3-2/fast
-
-#=============================================================================
-# Target rules for targets named tmp
-
-# Build rule for target.
-tmp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tmp
-.PHONY : tmp
-
-# fast build rule for target.
-tmp/fast:
-	$(MAKE) -f test/CMakeFiles/tmp.dir/build.make test/CMakeFiles/tmp.dir/build
-.PHONY : tmp/fast
 
 #=============================================================================
 # Target rules for targets named 3-6-tPolynomial
@@ -215,6 +215,19 @@ tDlist/fast:
 .PHONY : tDlist/fast
 
 #=============================================================================
+# Target rules for targets named tmp
+
+# Build rule for target.
+tmp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tmp
+.PHONY : tmp
+
+# fast build rule for target.
+tmp/fast:
+	$(MAKE) -f test/CMakeFiles/tmp.dir/build.make test/CMakeFiles/tmp.dir/build
+.PHONY : tmp/fast
+
+#=============================================================================
 # Target rules for targets named myc
 
 # Build rule for target.
@@ -235,14 +248,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... 3-10-Josephus-Problem"
 	@echo "... 3-2"
-	@echo "... tmp"
 	@echo "... 3-6-tPolynomial"
 	@echo "... 3-4-5tL1L2"
 	@echo "... 3-3-swap"
 	@echo "... tRsort"
 	@echo "... FactorialSum"
 	@echo "... tDlist"
+	@echo "... tmp"
 	@echo "... myc"
 .PHONY : help
 

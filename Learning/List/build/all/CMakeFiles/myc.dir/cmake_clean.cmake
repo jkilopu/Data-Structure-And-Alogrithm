@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "../lib/libmyc.a"
   "../lib/libmyc.pdb"
+  "CMakeFiles/myc.dir/circular-singly-list.c.obj"
   "CMakeFiles/myc.dir/doubly-list.c.obj"
   "CMakeFiles/myc.dir/list.c.obj"
   "CMakeFiles/myc.dir/polynomial.c.obj"

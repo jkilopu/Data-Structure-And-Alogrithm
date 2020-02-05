@@ -72,14 +72,15 @@ clean: all/clean
 # Directory level rules for directory test
 
 # Recursive "all" directory target.
+test/all: test/CMakeFiles/3-10-Josephus-Problem.dir/all
 test/all: test/CMakeFiles/3-2.dir/all
-test/all: test/CMakeFiles/tmp.dir/all
 test/all: test/CMakeFiles/3-6-tPolynomial.dir/all
 test/all: test/CMakeFiles/3-4-5tL1L2.dir/all
 test/all: test/CMakeFiles/3-3-swap.dir/all
 test/all: test/CMakeFiles/tRsort.dir/all
 test/all: test/CMakeFiles/FactorialSum.dir/all
 test/all: test/CMakeFiles/tDlist.dir/all
+test/all: test/CMakeFiles/tmp.dir/all
 
 .PHONY : test/all
 
@@ -89,16 +90,49 @@ test/preinstall:
 .PHONY : test/preinstall
 
 # Recursive "clean" directory target.
+test/clean: test/CMakeFiles/3-10-Josephus-Problem.dir/clean
 test/clean: test/CMakeFiles/3-2.dir/clean
-test/clean: test/CMakeFiles/tmp.dir/clean
 test/clean: test/CMakeFiles/3-6-tPolynomial.dir/clean
 test/clean: test/CMakeFiles/3-4-5tL1L2.dir/clean
 test/clean: test/CMakeFiles/3-3-swap.dir/clean
 test/clean: test/CMakeFiles/tRsort.dir/clean
 test/clean: test/CMakeFiles/FactorialSum.dir/clean
 test/clean: test/CMakeFiles/tDlist.dir/clean
+test/clean: test/CMakeFiles/tmp.dir/clean
 
 .PHONY : test/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/3-10-Josephus-Problem.dir
+
+# All Build rule for target.
+test/CMakeFiles/3-10-Josephus-Problem.dir/all: all/CMakeFiles/myc.dir/all
+	$(MAKE) -f test/CMakeFiles/3-10-Josephus-Problem.dir/build.make test/CMakeFiles/3-10-Josephus-Problem.dir/depend
+	$(MAKE) -f test/CMakeFiles/3-10-Josephus-Problem.dir/build.make test/CMakeFiles/3-10-Josephus-Problem.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=1,2 "Built target 3-10-Josephus-Problem"
+.PHONY : test/CMakeFiles/3-10-Josephus-Problem.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/3-10-Josephus-Problem.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/3-10-Josephus-Problem.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/3-10-Josephus-Problem.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/3-10-Josephus-Problem.dir/rule
+
+# Convenience name for target.
+3-10-Josephus-Problem: test/CMakeFiles/3-10-Josephus-Problem.dir/rule
+
+.PHONY : 3-10-Josephus-Problem
+
+# clean rule for target.
+test/CMakeFiles/3-10-Josephus-Problem.dir/clean:
+	$(MAKE) -f test/CMakeFiles/3-10-Josephus-Problem.dir/build.make test/CMakeFiles/3-10-Josephus-Problem.dir/clean
+.PHONY : test/CMakeFiles/3-10-Josephus-Problem.dir/clean
 
 #=============================================================================
 # Target rules for target test/CMakeFiles/3-2.dir
@@ -107,7 +141,7 @@ test/clean: test/CMakeFiles/tDlist.dir/clean
 test/CMakeFiles/3-2.dir/all: all/CMakeFiles/myc.dir/all
 	$(MAKE) -f test/CMakeFiles/3-2.dir/build.make test/CMakeFiles/3-2.dir/depend
 	$(MAKE) -f test/CMakeFiles/3-2.dir/build.make test/CMakeFiles/3-2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=1,2 "Built target 3-2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=3,4 "Built target 3-2"
 .PHONY : test/CMakeFiles/3-2.dir/all
 
 # Include target in all.
@@ -117,7 +151,7 @@ all: test/CMakeFiles/3-2.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/3-2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/3-2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/3-2.dir/rule
@@ -133,45 +167,13 @@ test/CMakeFiles/3-2.dir/clean:
 .PHONY : test/CMakeFiles/3-2.dir/clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/tmp.dir
-
-# All Build rule for target.
-test/CMakeFiles/tmp.dir/all: all/CMakeFiles/myc.dir/all
-	$(MAKE) -f test/CMakeFiles/tmp.dir/build.make test/CMakeFiles/tmp.dir/depend
-	$(MAKE) -f test/CMakeFiles/tmp.dir/build.make test/CMakeFiles/tmp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=22,23 "Built target tmp"
-.PHONY : test/CMakeFiles/tmp.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/tmp.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/tmp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tmp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/tmp.dir/rule
-
-# Convenience name for target.
-tmp: test/CMakeFiles/tmp.dir/rule
-
-.PHONY : tmp
-
-# clean rule for target.
-test/CMakeFiles/tmp.dir/clean:
-	$(MAKE) -f test/CMakeFiles/tmp.dir/build.make test/CMakeFiles/tmp.dir/clean
-.PHONY : test/CMakeFiles/tmp.dir/clean
-
-#=============================================================================
 # Target rules for target test/CMakeFiles/3-6-tPolynomial.dir
 
 # All Build rule for target.
 test/CMakeFiles/3-6-tPolynomial.dir/all: all/CMakeFiles/myc.dir/all
 	$(MAKE) -f test/CMakeFiles/3-6-tPolynomial.dir/build.make test/CMakeFiles/3-6-tPolynomial.dir/depend
 	$(MAKE) -f test/CMakeFiles/3-6-tPolynomial.dir/build.make test/CMakeFiles/3-6-tPolynomial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=7,8 "Built target 3-6-tPolynomial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=9,10 "Built target 3-6-tPolynomial"
 .PHONY : test/CMakeFiles/3-6-tPolynomial.dir/all
 
 # Include target in all.
@@ -181,7 +183,7 @@ all: test/CMakeFiles/3-6-tPolynomial.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/3-6-tPolynomial.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/3-6-tPolynomial.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/3-6-tPolynomial.dir/rule
@@ -203,7 +205,7 @@ test/CMakeFiles/3-6-tPolynomial.dir/clean:
 test/CMakeFiles/3-4-5tL1L2.dir/all: all/CMakeFiles/myc.dir/all
 	$(MAKE) -f test/CMakeFiles/3-4-5tL1L2.dir/build.make test/CMakeFiles/3-4-5tL1L2.dir/depend
 	$(MAKE) -f test/CMakeFiles/3-4-5tL1L2.dir/build.make test/CMakeFiles/3-4-5tL1L2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=5,6 "Built target 3-4-5tL1L2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=7,8 "Built target 3-4-5tL1L2"
 .PHONY : test/CMakeFiles/3-4-5tL1L2.dir/all
 
 # Include target in all.
@@ -213,7 +215,7 @@ all: test/CMakeFiles/3-4-5tL1L2.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/3-4-5tL1L2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/3-4-5tL1L2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/3-4-5tL1L2.dir/rule
@@ -235,7 +237,7 @@ test/CMakeFiles/3-4-5tL1L2.dir/clean:
 test/CMakeFiles/3-3-swap.dir/all: all/CMakeFiles/myc.dir/all
 	$(MAKE) -f test/CMakeFiles/3-3-swap.dir/build.make test/CMakeFiles/3-3-swap.dir/depend
 	$(MAKE) -f test/CMakeFiles/3-3-swap.dir/build.make test/CMakeFiles/3-3-swap.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=3,4 "Built target 3-3-swap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=5,6 "Built target 3-3-swap"
 .PHONY : test/CMakeFiles/3-3-swap.dir/all
 
 # Include target in all.
@@ -245,7 +247,7 @@ all: test/CMakeFiles/3-3-swap.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/3-3-swap.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/3-3-swap.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/3-3-swap.dir/rule
@@ -267,7 +269,7 @@ test/CMakeFiles/3-3-swap.dir/clean:
 test/CMakeFiles/tRsort.dir/all: all/CMakeFiles/myc.dir/all
 	$(MAKE) -f test/CMakeFiles/tRsort.dir/build.make test/CMakeFiles/tRsort.dir/depend
 	$(MAKE) -f test/CMakeFiles/tRsort.dir/build.make test/CMakeFiles/tRsort.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=20,21 "Built target tRsort"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=23,24 "Built target tRsort"
 .PHONY : test/CMakeFiles/tRsort.dir/all
 
 # Include target in all.
@@ -277,7 +279,7 @@ all: test/CMakeFiles/tRsort.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/tRsort.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tRsort.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/tRsort.dir/rule
@@ -299,7 +301,7 @@ test/CMakeFiles/tRsort.dir/clean:
 test/CMakeFiles/FactorialSum.dir/all: all/CMakeFiles/myc.dir/all
 	$(MAKE) -f test/CMakeFiles/FactorialSum.dir/build.make test/CMakeFiles/FactorialSum.dir/depend
 	$(MAKE) -f test/CMakeFiles/FactorialSum.dir/build.make test/CMakeFiles/FactorialSum.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=9,10 "Built target FactorialSum"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=11,12 "Built target FactorialSum"
 .PHONY : test/CMakeFiles/FactorialSum.dir/all
 
 # Include target in all.
@@ -309,7 +311,7 @@ all: test/CMakeFiles/FactorialSum.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/FactorialSum.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/FactorialSum.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/FactorialSum.dir/rule
@@ -331,7 +333,7 @@ test/CMakeFiles/FactorialSum.dir/clean:
 test/CMakeFiles/tDlist.dir/all: all/CMakeFiles/myc.dir/all
 	$(MAKE) -f test/CMakeFiles/tDlist.dir/build.make test/CMakeFiles/tDlist.dir/depend
 	$(MAKE) -f test/CMakeFiles/tDlist.dir/build.make test/CMakeFiles/tDlist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=18,19 "Built target tDlist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=21,22 "Built target tDlist"
 .PHONY : test/CMakeFiles/tDlist.dir/all
 
 # Include target in all.
@@ -341,7 +343,7 @@ all: test/CMakeFiles/tDlist.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/tDlist.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tDlist.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/tDlist.dir/rule
@@ -355,6 +357,38 @@ tDlist: test/CMakeFiles/tDlist.dir/rule
 test/CMakeFiles/tDlist.dir/clean:
 	$(MAKE) -f test/CMakeFiles/tDlist.dir/build.make test/CMakeFiles/tDlist.dir/clean
 .PHONY : test/CMakeFiles/tDlist.dir/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/tmp.dir
+
+# All Build rule for target.
+test/CMakeFiles/tmp.dir/all: all/CMakeFiles/myc.dir/all
+	$(MAKE) -f test/CMakeFiles/tmp.dir/build.make test/CMakeFiles/tmp.dir/depend
+	$(MAKE) -f test/CMakeFiles/tmp.dir/build.make test/CMakeFiles/tmp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=25,26 "Built target tmp"
+.PHONY : test/CMakeFiles/tmp.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/tmp.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/tmp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tmp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/tmp.dir/rule
+
+# Convenience name for target.
+tmp: test/CMakeFiles/tmp.dir/rule
+
+.PHONY : tmp
+
+# clean rule for target.
+test/CMakeFiles/tmp.dir/clean:
+	$(MAKE) -f test/CMakeFiles/tmp.dir/build.make test/CMakeFiles/tmp.dir/clean
+.PHONY : test/CMakeFiles/tmp.dir/clean
 
 #=============================================================================
 # Directory level rules for directory all
@@ -381,7 +415,7 @@ all/clean: all/CMakeFiles/myc.dir/clean
 all/CMakeFiles/myc.dir/all:
 	$(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/depend
 	$(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=11,12,13,14,15,16,17 "Built target myc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles --progress-num=13,14,15,16,17,18,19,20 "Built target myc"
 .PHONY : all/CMakeFiles/myc.dir/all
 
 # Include target in all.
@@ -391,7 +425,7 @@ all: all/CMakeFiles/myc.dir/all
 
 # Build rule for subdir invocation for target.
 all/CMakeFiles/myc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 all/CMakeFiles/myc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles 0
 .PHONY : all/CMakeFiles/myc.dir/rule

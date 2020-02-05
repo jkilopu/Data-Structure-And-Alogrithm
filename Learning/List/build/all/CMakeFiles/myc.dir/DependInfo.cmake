@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "C:/Data-Structure-And-Alogrithm/src/circular-singly-list.c" "C:/Data-Structure-And-Alogrithm/Learning/List/build/all/CMakeFiles/myc.dir/circular-singly-list.c.obj"
   "C:/Data-Structure-And-Alogrithm/src/doubly-list.c" "C:/Data-Structure-And-Alogrithm/Learning/List/build/all/CMakeFiles/myc.dir/doubly-list.c.obj"
   "C:/Data-Structure-And-Alogrithm/src/list.c" "C:/Data-Structure-And-Alogrithm/Learning/List/build/all/CMakeFiles/myc.dir/list.c.obj"
   "C:/Data-Structure-And-Alogrithm/src/polynomial.c" "C:/Data-Structure-And-Alogrithm/Learning/List/build/all/CMakeFiles/myc.dir/polynomial.c.obj"

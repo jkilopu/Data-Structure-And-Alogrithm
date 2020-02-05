@@ -14,7 +14,7 @@ Polynomial PAdd(Polynomial pol, ElementType coefficient, ElementType exponent);
 int PLength(Polynomial po);
 void PNClear(PNode *p);
 void PClear(Polynomial po);
-void PClearElement(Polynomial po);
+Polynomial PClearElement(Polynomial po);
 Polynomial PMerge(Polynomial po1, Polynomial po2, Polynomial po3);
 Polynomial PMultiply(Polynomial po1, Polynomial po2, Polynomial po3);
 Polynomial PPow(Polynomial po, unsigned int N, Polynomial po_output);

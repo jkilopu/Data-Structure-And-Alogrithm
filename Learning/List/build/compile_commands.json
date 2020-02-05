@@ -1,13 +1,13 @@
 [
 {
   "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/test",
-  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/3-2.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/3-2.dir/3-2.c.obj   -c C:/Data-Structure-And-Alogrithm/Learning/List/test/3-2.c",
-  "file": "C:/Data-Structure-And-Alogrithm/Learning/List/test/3-2.c"
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/3-10-Josephus-Problem.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/3-10-Josephus-Problem.dir/3-10-Josephus-Problem.c.obj   -c C:/Data-Structure-And-Alogrithm/Learning/List/test/3-10-Josephus-Problem.c",
+  "file": "C:/Data-Structure-And-Alogrithm/Learning/List/test/3-10-Josephus-Problem.c"
 },
 {
   "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/test",
-  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/tmp.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/tmp.dir/tmp.c.obj   -c C:/Data-Structure-And-Alogrithm/Learning/List/test/tmp.c",
-  "file": "C:/Data-Structure-And-Alogrithm/Learning/List/test/tmp.c"
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/3-2.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/3-2.dir/3-2.c.obj   -c C:/Data-Structure-And-Alogrithm/Learning/List/test/3-2.c",
+  "file": "C:/Data-Structure-And-Alogrithm/Learning/List/test/3-2.c"
 },
 {
   "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/test",
@@ -38,6 +38,16 @@
   "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/test",
   "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/tDlist.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/tDlist.dir/tDlist.c.obj   -c C:/Data-Structure-And-Alogrithm/Learning/List/test/tDlist.c",
   "file": "C:/Data-Structure-And-Alogrithm/Learning/List/test/tDlist.c"
+},
+{
+  "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/test",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/tmp.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/tmp.dir/tmp.c.obj   -c C:/Data-Structure-And-Alogrithm/Learning/List/test/tmp.c",
+  "file": "C:/Data-Structure-And-Alogrithm/Learning/List/test/tmp.c"
+},
+{
+  "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/all",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/myc.dir/includes_C.rsp -g   -std=gnu11 -o CMakeFiles/myc.dir/circular-singly-list.c.obj   -c C:/Data-Structure-And-Alogrithm/src/circular-singly-list.c",
+  "file": "C:/Data-Structure-And-Alogrithm/src/circular-singly-list.c"
 },
 {
   "directory": "C:/Data-Structure-And-Alogrithm/Learning/List/build/all",

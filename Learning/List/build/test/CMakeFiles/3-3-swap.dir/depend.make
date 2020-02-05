@@ -3,5 +3,6 @@
 
 test/CMakeFiles/3-3-swap.dir/3-3-swap.c.obj: ../test/3-3-swap.c
 test/CMakeFiles/3-3-swap.dir/3-3-swap.c.obj: C:/Data-Structure-And-Alogrithm/inc/doubly-list.h
+test/CMakeFiles/3-3-swap.dir/3-3-swap.c.obj: C:/Data-Structure-And-Alogrithm/inc/fatal.h
 test/CMakeFiles/3-3-swap.dir/3-3-swap.c.obj: C:/Data-Structure-And-Alogrithm/inc/list.h
 

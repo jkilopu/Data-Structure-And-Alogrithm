@@ -1,16 +1,5 @@
 #include "doubly-list.h"
-#include "fatal.h"
-struct DNodeRecord
-{
-    int value;
-    struct DNodeRecord *next;
-    struct DNodeRecord *front;
-};
-struct DListRecord
-{
-    DNode *head;
-    DNode *tail;
-};
+
 DList CreateDList(void)
 {
     DList d;

@@ -17,6 +17,14 @@ C:/Data-Structure-And-Alogrithm/Learning/List/test/doubly-list.h
 C:/Data-Structure-And-Alogrithm/inc/doubly-list.h
 stdbool.h
 -
+fatal.h
+C:/Data-Structure-And-Alogrithm/inc/fatal.h
+
+C:/Data-Structure-And-Alogrithm/inc/fatal.h
+stdio.h
+-
+stdlib.h
+-
 
 C:/Data-Structure-And-Alogrithm/inc/list.h
 stdio.h

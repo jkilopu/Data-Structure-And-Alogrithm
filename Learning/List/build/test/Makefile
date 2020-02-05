@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/3-10-Josephus-Problem.dir/rule:
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/3-10-Josephus-Problem.dir/rule
+.PHONY : test/CMakeFiles/3-10-Josephus-Problem.dir/rule
+
+# Convenience name for target.
+3-10-Josephus-Problem: test/CMakeFiles/3-10-Josephus-Problem.dir/rule
+
+.PHONY : 3-10-Josephus-Problem
+
+# fast build rule for target.
+3-10-Josephus-Problem/fast:
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-10-Josephus-Problem.dir/build.make test/CMakeFiles/3-10-Josephus-Problem.dir/build
+.PHONY : 3-10-Josephus-Problem/fast
+
+# Convenience name for target.
 test/CMakeFiles/3-2.dir/rule:
 	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/3-2.dir/rule
 .PHONY : test/CMakeFiles/3-2.dir/rule
@@ -124,21 +139,6 @@ test/CMakeFiles/3-2.dir/rule:
 3-2/fast:
 	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-2.dir/build.make test/CMakeFiles/3-2.dir/build
 .PHONY : 3-2/fast
-
-# Convenience name for target.
-test/CMakeFiles/tmp.dir/rule:
-	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tmp.dir/rule
-.PHONY : test/CMakeFiles/tmp.dir/rule
-
-# Convenience name for target.
-tmp: test/CMakeFiles/tmp.dir/rule
-
-.PHONY : tmp
-
-# fast build rule for target.
-tmp/fast:
-	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/tmp.dir/build.make test/CMakeFiles/tmp.dir/build
-.PHONY : tmp/fast
 
 # Convenience name for target.
 test/CMakeFiles/3-6-tPolynomial.dir/rule:
@@ -229,6 +229,48 @@ tDlist: test/CMakeFiles/tDlist.dir/rule
 tDlist/fast:
 	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/tDlist.dir/build.make test/CMakeFiles/tDlist.dir/build
 .PHONY : tDlist/fast
+
+# Convenience name for target.
+test/CMakeFiles/tmp.dir/rule:
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tmp.dir/rule
+.PHONY : test/CMakeFiles/tmp.dir/rule
+
+# Convenience name for target.
+tmp: test/CMakeFiles/tmp.dir/rule
+
+.PHONY : tmp
+
+# fast build rule for target.
+tmp/fast:
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/tmp.dir/build.make test/CMakeFiles/tmp.dir/build
+.PHONY : tmp/fast
+
+3-10-Josephus-Problem.obj: 3-10-Josephus-Problem.c.obj
+
+.PHONY : 3-10-Josephus-Problem.obj
+
+# target to build an object file
+3-10-Josephus-Problem.c.obj:
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-10-Josephus-Problem.dir/build.make test/CMakeFiles/3-10-Josephus-Problem.dir/3-10-Josephus-Problem.c.obj
+.PHONY : 3-10-Josephus-Problem.c.obj
+
+3-10-Josephus-Problem.i: 3-10-Josephus-Problem.c.i
+
+.PHONY : 3-10-Josephus-Problem.i
+
+# target to preprocess a source file
+3-10-Josephus-Problem.c.i:
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-10-Josephus-Problem.dir/build.make test/CMakeFiles/3-10-Josephus-Problem.dir/3-10-Josephus-Problem.c.i
+.PHONY : 3-10-Josephus-Problem.c.i
+
+3-10-Josephus-Problem.s: 3-10-Josephus-Problem.c.s
+
+.PHONY : 3-10-Josephus-Problem.s
+
+# target to generate assembly for a file
+3-10-Josephus-Problem.c.s:
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f test/CMakeFiles/3-10-Josephus-Problem.dir/build.make test/CMakeFiles/3-10-Josephus-Problem.dir/3-10-Josephus-Problem.c.s
+.PHONY : 3-10-Josephus-Problem.c.s
 
 3-2.obj: 3-2.c.obj
 
@@ -452,16 +494,20 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... 3-10-Josephus-Problem"
 	@echo "... 3-2"
-	@echo "... tmp"
 	@echo "... 3-6-tPolynomial"
 	@echo "... 3-4-5tL1L2"
 	@echo "... 3-3-swap"
 	@echo "... tRsort"
 	@echo "... FactorialSum"
 	@echo "... tDlist"
+	@echo "... tmp"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... 3-10-Josephus-Problem.obj"
+	@echo "... 3-10-Josephus-Problem.i"
+	@echo "... 3-10-Josephus-Problem.s"
 	@echo "... 3-2.obj"
 	@echo "... 3-2.i"
 	@echo "... 3-2.s"

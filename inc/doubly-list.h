@@ -2,10 +2,19 @@
 #define _dlist_h
 
 #include <stdbool.h>
+#include "fatal.h"
 typedef int ElementType;
-struct DNodeRecord;
-struct DListRecord;
-typedef struct DNodeRecord DNode;
+typedef struct DNodeRecord
+{
+    int value;
+    struct DNodeRecord *next;
+    struct DNodeRecord *front;
+}DNode;
+struct DListRecord
+{
+    DNode *head;
+    DNode *tail;
+};
 typedef struct DListRecord *DList;
 
 DList CreateDList(void);

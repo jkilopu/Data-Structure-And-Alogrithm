@@ -54,13 +54,14 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "test/CMakeFiles/3-10-Josephus-Problem.dir/DependInfo.cmake"
   "test/CMakeFiles/3-2.dir/DependInfo.cmake"
-  "test/CMakeFiles/tmp.dir/DependInfo.cmake"
   "test/CMakeFiles/3-6-tPolynomial.dir/DependInfo.cmake"
   "test/CMakeFiles/3-4-5tL1L2.dir/DependInfo.cmake"
   "test/CMakeFiles/3-3-swap.dir/DependInfo.cmake"
   "test/CMakeFiles/tRsort.dir/DependInfo.cmake"
   "test/CMakeFiles/FactorialSum.dir/DependInfo.cmake"
   "test/CMakeFiles/tDlist.dir/DependInfo.cmake"
+  "test/CMakeFiles/tmp.dir/DependInfo.cmake"
   "all/CMakeFiles/myc.dir/DependInfo.cmake"
   )

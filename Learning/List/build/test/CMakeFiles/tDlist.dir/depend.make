@@ -3,4 +3,5 @@
 
 test/CMakeFiles/tDlist.dir/tDlist.c.obj: ../test/tDlist.c
 test/CMakeFiles/tDlist.dir/tDlist.c.obj: C:/Data-Structure-And-Alogrithm/inc/doubly-list.h
+test/CMakeFiles/tDlist.dir/tDlist.c.obj: C:/Data-Structure-And-Alogrithm/inc/fatal.h
 

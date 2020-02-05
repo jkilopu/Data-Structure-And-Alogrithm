@@ -1,13 +1,14 @@
 C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles/edit_cache.dir
 C:/Data-Structure-And-Alogrithm/Learning/List/build/CMakeFiles/rebuild_cache.dir
+C:/Data-Structure-And-Alogrithm/Learning/List/build/test/CMakeFiles/3-10-Josephus-Problem.dir
 C:/Data-Structure-And-Alogrithm/Learning/List/build/test/CMakeFiles/3-2.dir
-C:/Data-Structure-And-Alogrithm/Learning/List/build/test/CMakeFiles/tmp.dir
 C:/Data-Structure-And-Alogrithm/Learning/List/build/test/CMakeFiles/3-6-tPolynomial.dir
 C:/Data-Structure-And-Alogrithm/Learning/List/build/test/CMakeFiles/3-4-5tL1L2.dir
 C:/Data-Structure-And-Alogrithm/Learning/List/build/test/CMakeFiles/3-3-swap.dir
 C:/Data-Structure-And-Alogrithm/Learning/List/build/test/CMakeFiles/tRsort.dir
 C:/Data-Structure-And-Alogrithm/Learning/List/build/test/CMakeFiles/FactorialSum.dir
 C:/Data-Structure-And-Alogrithm/Learning/List/build/test/CMakeFiles/tDlist.dir
+C:/Data-Structure-And-Alogrithm/Learning/List/build/test/CMakeFiles/tmp.dir
 C:/Data-Structure-And-Alogrithm/Learning/List/build/test/CMakeFiles/edit_cache.dir
 C:/Data-Structure-And-Alogrithm/Learning/List/build/test/CMakeFiles/rebuild_cache.dir
 C:/Data-Structure-And-Alogrithm/Learning/List/build/all/CMakeFiles/edit_cache.dir

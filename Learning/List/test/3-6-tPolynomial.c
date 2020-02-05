@@ -4,7 +4,7 @@
 int main(void)
 {
     int c1[] = {9, 5, 8, 2, 4, 5, 1, 2, 4, 5, 2, 4, 1, 4, 2}, e1[] = {15, 14, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
-    int c2[] = {1, 4}, e2[] = {3, 1};
+    int c2[] = {1, 1}, e2[] = {3, 2};
     int i;
     clock_t start, stop;
     double duration;
@@ -30,7 +30,7 @@ int main(void)
     // PPrint(po2), printf("Time spent:%lf\n", duration);
     
     start = clock();
-    PPow(po2, 11, po_res);
+    PPow(po2, 1000, po_res);
     stop = clock();
     duration = (double)(stop - start) / CLK_TCK;
     PPrint(po_res), printf("Time spent: %lf\n", duration);

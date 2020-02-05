@@ -61,15 +61,15 @@ void PNClear(PNode *p)
 }
 void PClear(Polynomial po)
 {
-    PNode *p = po->head;
-    PNClear(p);
+    PNClear(po->head);
     free(po);
 }
-void PClearElement(Polynomial po)
+Polynomial PClearElement(Polynomial po)
 {
     PNode *p = po->head;
     PNClear(p);
     PMakeEmpty(po);
+    return po;
 }
 Polynomial PMerge(Polynomial po1, Polynomial po2, Polynomial po3)           //不可以自己加自己，不能放到自己的位置
 {

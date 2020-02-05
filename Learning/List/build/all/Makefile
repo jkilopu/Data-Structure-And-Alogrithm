@@ -125,6 +125,33 @@ myc/fast:
 	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/build
 .PHONY : myc/fast
 
+circular-singly-list.obj: circular-singly-list.c.obj
+
+.PHONY : circular-singly-list.obj
+
+# target to build an object file
+circular-singly-list.c.obj:
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/circular-singly-list.c.obj
+.PHONY : circular-singly-list.c.obj
+
+circular-singly-list.i: circular-singly-list.c.i
+
+.PHONY : circular-singly-list.i
+
+# target to preprocess a source file
+circular-singly-list.c.i:
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/circular-singly-list.c.i
+.PHONY : circular-singly-list.c.i
+
+circular-singly-list.s: circular-singly-list.c.s
+
+.PHONY : circular-singly-list.s
+
+# target to generate assembly for a file
+circular-singly-list.c.s:
+	cd C:/Data-Structure-And-Alogrithm/Learning/List/build && $(MAKE) -f all/CMakeFiles/myc.dir/build.make all/CMakeFiles/myc.dir/circular-singly-list.c.s
+.PHONY : circular-singly-list.c.s
+
 doubly-list.obj: doubly-list.c.obj
 
 .PHONY : doubly-list.obj
@@ -296,6 +323,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... myc"
 	@echo "... rebuild_cache"
+	@echo "... circular-singly-list.obj"
+	@echo "... circular-singly-list.i"
+	@echo "... circular-singly-list.s"
 	@echo "... doubly-list.obj"
 	@echo "... doubly-list.i"
 	@echo "... doubly-list.s"
