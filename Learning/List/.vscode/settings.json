@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "list.h": "c",
-        "doubly-list.h": "c",
-        "queue.h": "c",
-        "time.h": "c",
-        "unistd.h": "c"
-    }
-}

@@ -2,12 +2,7 @@
 cmake_minimum_required(VERSION 3.10.0)
 
 # 项目名称
-project(queue)
-
-# 设置C/C++标准
-set(CMAKE_C_STANDARD 11)
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+project(codeforces)
 
 #设置输出路径
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
