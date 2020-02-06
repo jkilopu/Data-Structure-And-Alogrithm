@@ -1,5 +1,5 @@
 #include "list.h"
-#include "Rsort.h"
+#include "rsort.h"
 #include <stdbool.h>
 int GetDigit(int x, int y, int N)
 {

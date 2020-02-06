@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include "list.h"
-#include "Rsort.h"
+#include "rsort.h"
 int main(void)
 {
     int i;
