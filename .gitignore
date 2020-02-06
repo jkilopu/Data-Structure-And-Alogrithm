@@ -1,10 +1,10 @@
 # Prerequisites
 *.d
 
-#Build files
+# Build files
 build
 
-#vscode json
+# vscode json
 .vscode
 .vscode/*
 *.json

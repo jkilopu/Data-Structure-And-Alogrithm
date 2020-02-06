@@ -4,9 +4,16 @@
 #include <stdlib.h>
 
 typedef int ElementType;
-struct _pnode;
-struct _polynomial;
-typedef struct _pnode PNode;
+typedef struct _pnode
+{
+    ElementType coefficient;
+    ElementType exponent;
+    struct _pnode *next;
+} PNode;
+struct _polynomial
+{
+    PNode *head;
+};
 typedef struct _polynomial* Polynomial;
 
 Polynomial CreatePolynomial(void);

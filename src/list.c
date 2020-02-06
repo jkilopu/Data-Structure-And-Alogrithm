@@ -90,7 +90,9 @@ Node *Reverse(List *pList)
         next->next = prev->next;
         prev->next = next;
     }
-    return pList->head = prev->next;
+    pList->head = prev->next;
+    free(prev);
+    return pList->head;
 }
 void Swap(List *pList, int n)
 {

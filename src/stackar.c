@@ -8,11 +8,11 @@ struct StackRecord
     ElementType *Array;
 };
 
-int IsEmpty( Stack S )
+int StIsEmpty( Stack S )
 {
     return S->TopOfStack == EmptyTOS;
 }
-int IsFull( Stack S )
+int StIsFull( Stack S )
 {
     return S->TopOfStack == S->Capacity - 1;
 }
@@ -31,11 +31,11 @@ Stack CreateStack( int MaxElements )
     if( S->Array == NULL )
         FatalError( "Out of space!!!" );
     S->Capacity = MaxElements;
-    MakeEmpty( S );
+    StMakeEmpty( S );
 
     return S;
 }
-void MakeEmpty( Stack S )
+void StMakeEmpty( Stack S )
 {
     S->TopOfStack = EmptyTOS;
 }
@@ -49,28 +49,28 @@ void DisposeStack( Stack S )
 }
 void Push( ElementType X, Stack S )
 {
-    if( IsFull( S ) )
+    if( StIsFull( S ) )
         Error( "Full stack" );
     else
         S->Array[ ++S->TopOfStack ] = X;
 }
 ElementType Top( Stack S )
 {
-    if( !IsEmpty( S ) )
+    if( !StIsEmpty( S ) )
         return S->Array[ S->TopOfStack ];
     Error( "Empty stack" );
     return 0;  /* Return value used to avoid warning */
 }
 void Pop( Stack S )
 {
-    if( IsEmpty( S ) )
+    if( StIsEmpty( S ) )
         Error( "Empty stack" );
     else
         S->TopOfStack--;
 }
 ElementType TopAndPop( Stack S )
 {
-    if( !IsEmpty( S ) )
+    if( !StIsEmpty( S ) )
         return S->Array[ S->TopOfStack-- ];
     Error( "Empty stack" );
     return 0;  /* Return value used to avoid warning */

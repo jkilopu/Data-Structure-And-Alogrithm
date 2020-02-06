@@ -11,58 +11,61 @@ bool IsLeftParenthesis(char ch);
 int GetPriority(char ch);
 int main(void)
 {
-    char test[] = "94*5";
+    char test[] = "2*(1+3-2)";
     Stack postfix;
     Stack operator;
     int i, j, m, n, a, b;
     char ch;
 
     postfix = CreateStack(MAXSIZE);
-    operator = CreateStack(MAXSIZE);
+    operator= CreateStack(MAXSIZE);
     for (i = 0; test[i] != '\0'; i++)
     {
-        if(isdigit(test[i])){
+        if (isdigit(test[i]))
+        {
             j = 1, a = 0;
-            while(isdigit(test[i]))
-                a = a * 10 + TON(test[i++]);  //WOW!逐个读入并计算多位数最简便的方法!
+            while (isdigit(test[i]))
+                a = a * 10 + TON(test[i++]); //WOW!逐个读入字符并计算多位数最简便的方法!
             Push(a, postfix);
             i--;
-            }
+        }
         //空栈就入栈
-        else if(IsEmpty(operator))
+        else if (StIsEmpty(operator))
             Push(test[i], operator);
-            //左括号直接入栈
-            else if(IsLeftParenthesis(test[i]))
-                Push(test[i], operator);
-                //遇到右括号直接弹出
-                else if (IsRightParenthesis(test[i]))   //不需要纠结括号内是什么样，弹出就是了！
-                {
-                    /*每弹出一个操作符就进行一次运算*/
-                    while (Top(operator) != '(')
-                    {
-                        ch = TopAndPop(operator);
-                        a = TopAndPop(postfix);
-                        b = TopAndPop(postfix);
-                        Push(Caculate(a, b, ch), postfix);
-                    }
-                    Pop(operator);
-            }
-            //遇到运算符比较优先级
-            else if((m = GetPriority(test[i])) < (n = GetPriority(Top(operator)))){
-                while((m = GetPriority(test[i])) < (n = GetPriority(Top(operator))))
-                {
-                    ch = TopAndPop(operator);
-                    a = TopAndPop(postfix);
-                    b = TopAndPop(postfix);
-                    Push(Caculate(a, b, ch), postfix);
-                    Push(test[i], operator);
-                }
-            }
-            else
-                Push(test[i], operator);
-        if(test[i + 1] == '\0')
+        //左括号直接入栈
+        else if (IsLeftParenthesis(test[i]))
+            Push(test[i], operator);
+        //遇到右括号直接弹出
+        else if (IsRightParenthesis(test[i])) //不需要纠结括号内是什么样，弹出就是了！
         {
-            while(!IsEmpty(operator))
+            /*每弹出一个操作符就进行一次运算*/
+            while (Top(operator) != '(')
+            {
+                ch = TopAndPop(operator);
+                a = TopAndPop(postfix);
+                b = TopAndPop(postfix);
+                Push(Caculate(a, b, ch), postfix);
+            }
+            Pop(operator);
+        }
+        //遇到运算符比较优先级
+        else if ((m = GetPriority(test[i])) < (n = GetPriority(Top(operator))))
+        {
+            while ((m = GetPriority(test[i])) < (n = GetPriority(Top(operator))))
+            {
+                ch = TopAndPop(operator);
+                a = TopAndPop(postfix);
+                b = TopAndPop(postfix);
+                Push(Caculate(a, b, ch), postfix);
+                Push(test[i], operator);
+            }
+        }
+        else
+            Push(test[i], operator);
+        //读取完毕，计算剩余式子
+        if (test[i + 1] == '\0')
+        {
+            while (!StIsEmpty(operator))
             {
                 ch = TopAndPop(operator);
                 a = TopAndPop(postfix);
@@ -88,6 +91,13 @@ int Caculate(int a, int b, char ch)
     case '+':
         ret = a + b;
         break;
+    //注意乘和除的順序！
+    case '/':
+        ret = b / a;
+        break;
+    case '-':
+        ret = b - a;
+        break;
     }
     return ret;
 }
@@ -101,7 +111,10 @@ bool IsRightParenthesis(char ch)
 }
 int GetPriority(char ch)
 {
-    if (ch == '+' || ch == '-') return 0;
-    else if (ch == '*' || ch == '/') return 1;
-    else if (ch == '(' || ch == ')') return -1;
+    if (ch == '+' || ch == '-')
+        return 0;
+    else if (ch == '*' || ch == '/')
+        return 1;
+    else if (ch == '(' || ch == ')')
+        return -1;
 }

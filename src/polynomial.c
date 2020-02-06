@@ -1,16 +1,6 @@
 #include "polynomial.h"
 #include "fatal.h"
 #include <stdbool.h>
-struct _pnode
-{
-    ElementType coefficient;
-    ElementType exponent;
-    struct _pnode *next;
-};
-struct _polynomial
-{
-    PNode *head;
-};
 Polynomial CreatePolynomial(void)
 {
     Polynomial po = (Polynomial)malloc(sizeof(PNode *));
