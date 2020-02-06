@@ -6,27 +6,3 @@
 
 #IncludeRegexTransform: 
 
-C:/Data-Structure-And-Alogrithm/Learning/List/test/3-10-Josephus-Problem.c
-stdio.h
--
-circular-singly-list.h
-C:/Data-Structure-And-Alogrithm/Learning/List/test/circular-singly-list.h
-time.h
--
-
-C:/Data-Structure-And-Alogrithm/inc/circular-singly-list.h
-fatal.h
-C:/Data-Structure-And-Alogrithm/inc/fatal.h
-stdio.h
--
-stdlib.h
--
-stdbool.h
--
-
-C:/Data-Structure-And-Alogrithm/inc/fatal.h
-stdio.h
--
-stdlib.h
--
-

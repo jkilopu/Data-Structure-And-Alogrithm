@@ -6,23 +6,3 @@
 
 #IncludeRegexTransform: 
 
-C:/Data-Structure-And-Alogrithm/inc/circular-singly-list.h
-fatal.h
-C:/Data-Structure-And-Alogrithm/inc/fatal.h
-stdio.h
--
-stdlib.h
--
-stdbool.h
--
-
-C:/Data-Structure-And-Alogrithm/inc/fatal.h
-stdio.h
--
-stdlib.h
--
-
-C:/Data-Structure-And-Alogrithm/src/circular-singly-list.c
-circular-singly-list.h
-C:/Data-Structure-And-Alogrithm/src/circular-singly-list.h
-

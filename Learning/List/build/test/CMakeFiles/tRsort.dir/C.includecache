@@ -6,25 +6,3 @@
 
 #IncludeRegexTransform: 
 
-C:/Data-Structure-And-Alogrithm/Learning/List/test/tRsort.c
-stdio.h
--
-stdlib.h
--
-stdbool.h
--
-list.h
-C:/Data-Structure-And-Alogrithm/Learning/List/test/list.h
-Rsort.h
-C:/Data-Structure-And-Alogrithm/Learning/List/test/Rsort.h
-
-C:/Data-Structure-And-Alogrithm/inc/list.h
-stdio.h
--
-stdlib.h
--
-
-C:/Data-Structure-And-Alogrithm/inc/rsort.h
-list.h
-C:/Data-Structure-And-Alogrithm/inc/list.h
-

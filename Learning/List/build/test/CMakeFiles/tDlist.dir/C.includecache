@@ -6,21 +6,3 @@
 
 #IncludeRegexTransform: 
 
-C:/Data-Structure-And-Alogrithm/Learning/List/test/tDlist.c
-doubly-list.h
-C:/Data-Structure-And-Alogrithm/Learning/List/test/doubly-list.h
-stdio.h
--
-
-C:/Data-Structure-And-Alogrithm/inc/doubly-list.h
-stdbool.h
--
-fatal.h
-C:/Data-Structure-And-Alogrithm/inc/fatal.h
-
-C:/Data-Structure-And-Alogrithm/inc/fatal.h
-stdio.h
--
-stdlib.h
--
-
