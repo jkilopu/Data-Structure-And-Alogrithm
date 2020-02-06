@@ -5,7 +5,9 @@
 build
 
 #vscode json
+.vscode
 .vscode/*
+*.json
 
 # Object files
 *.o
@@ -56,3 +58,4 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+Learning/Queue/.vscode/launch.json
