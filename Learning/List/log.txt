@@ -1,0 +1,17 @@
+首次Build的信息
+[build] 正在启动生成
+[proc] 执行命令: "C:\Program Files (x86)\CMake\bin\cmake.EXE" --build c:/Learning/List/build --config Debug --target all -- -j 10
+[build] [ 11%] Building C object src/CMakeFiles/Lists.dir/Rsort.c.obj
+[build] [ 22%] Building C object src/CMakeFiles/Lists.dir/list.c.obj
+[build] [ 33%] Linking C static library ../lib/libLists.a
+[build] [ 33%] Built target Lists
+[build] [ 44%] Building C object test/CMakeFiles/tRsort.dir/tRsort.c.obj
+[build] [ 55%] Building C object test/CMakeFiles/FactorialSum.dir/FactorialSum.c.obj
+[build] [ 66%] Building C object test/CMakeFiles/test.dir/test.c.obj
+[build] [ 88%] Linking C executable ../bin/tRsort.exe
+[build] [ 88%] Linking C executable ../bin/test.exe
+[build] [100%] Linking C executable ../bin/FactorialSum.exe
+[build] [100%] Built target FactorialSum
+[build] [100%] Built target tRsort
+[build] [100%] Built target test
+[build] 生成已完成，退出代码为 0
