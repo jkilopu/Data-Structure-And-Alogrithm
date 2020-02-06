@@ -1,2 +1,0 @@
-C:/mingw64/bin/ar.exe qc ../lib/libmyc.a  CMakeFiles/myc.dir/circular-singly-list.c.obj CMakeFiles/myc.dir/doubly-list.c.obj CMakeFiles/myc.dir/list.c.obj CMakeFiles/myc.dir/polynomial.c.obj CMakeFiles/myc.dir/queue.c.obj CMakeFiles/myc.dir/rsort.c.obj CMakeFiles/myc.dir/stackar.c.obj
-C:/mingw64/bin/ranlib.exe ../lib/libmyc.a
