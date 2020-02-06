@@ -30,9 +30,9 @@ int main(void)
     // PPrint(po2), printf("Time spent:%lf\n", duration);
     
     start = clock();
-    PPow(po2, 1000, po_res);
+    PPow(po2, 10, po_res);
     stop = clock();
-    duration = (double)(stop - start) / CLK_TCK;
+    duration = (double)(stop - start) / CLOCKS_PER_SEC;
     PPrint(po_res), printf("Time spent: %lf\n", duration);
     PPrint(po2);        //验证po2没有被改变
     PClear(po1), PClear(po2), PClear(po_res);

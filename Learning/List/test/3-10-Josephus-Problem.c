@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include "circular-singly-list.h"
 #include <time.h>
+#include <unistd.h>
 int main(void)
 {
     CList people = CreateCList();
@@ -35,7 +36,7 @@ int main(void)
         // CPrint(people); /* 仅测试时使用 */
     }
     stop = clock();
-    duration = (double)(stop - start) / CLK_TCK;
+    duration = (double)(stop - start) / CLOCKS_PER_SEC;
     CPrint(people), printf("Time spent: %lf", duration);
     CClear(people);
 

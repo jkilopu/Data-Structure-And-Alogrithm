@@ -5,7 +5,7 @@
 build
 
 #vscode json
-.vscode
+.vscode/*
 
 # Object files
 *.o
