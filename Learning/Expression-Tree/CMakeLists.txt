@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.10.0)
 
 # 项目名称
-project(queue)
+project(expression-tree)
 
 #设置输出路径
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
