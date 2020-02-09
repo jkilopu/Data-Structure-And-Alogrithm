@@ -14,7 +14,7 @@ STree SInsert(ElementType x, STree t)
     if (t == NULL)
     {
         // Create and return a one-node tree. 必须在该函数中，最好不要独立成一个函数
-        t = malloc(sizeof(BNode));
+        t = (STree)malloc(sizeof(BNode));
         if (t == NULL)
             FatalError("Out of space!");
         else
@@ -50,9 +50,9 @@ STree SDelete(ElementType x, STree t)
         tmpCell = t;
         //also handle zero chile
         if (t->left == NULL)
-            t = t->left;
-        else if (t->right == NULL)
             t = t->right;
+        else if (t->right == NULL)
+            t = t->left;
         free(tmpCell);
     }
 
