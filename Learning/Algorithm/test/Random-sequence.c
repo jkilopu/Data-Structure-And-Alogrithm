@@ -58,7 +58,7 @@ void Method_1_test(double duration_1[])
         }
         stop = clock();
         free(a);
-        duration_1[j] = ((double)stop - start) / CLK_TCK;
+        duration_1[j] = ((double)stop - start) / CLOCKS_PER_SEC;
     }
 }
 void Method_2_test(double duration_2[])
@@ -85,7 +85,7 @@ void Method_2_test(double duration_2[])
         stop = clock();
         free(Used_a);
         free(a);
-        duration_2[j] = ((double)stop - start) / CLK_TCK;
+        duration_2[j] = ((double)stop - start) / CLOCKS_PER_SEC;
     }
 }
 void Method_3_test(double duration_3[])
@@ -104,7 +104,7 @@ void Method_3_test(double duration_3[])
             Swap(&a[i], &a[rand() % (i + 1)]);
         stop = clock();
         free(a);
-        duration_3[j] = ((double)stop - start) / CLK_TCK;
+        duration_3[j] = ((double)stop - start) / CLOCKS_PER_SEC;
     }
 }
 void Swap(int *a, int *b)

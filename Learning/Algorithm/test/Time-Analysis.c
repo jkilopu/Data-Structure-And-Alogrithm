@@ -13,7 +13,7 @@ int main(void)
                 for (k = 0; k < j; k++)
                     sum++;
     stop = clock();
-    duration = ((double)stop - start) / CLK_TCK;
+    duration = ((double)stop - start) / CLOCKS_PER_SEC;
     printf("Time_1: %lf", duration);
 
     return 0;

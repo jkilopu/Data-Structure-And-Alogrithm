@@ -23,7 +23,7 @@ void Print(const List *pList)
     Node *p;
     for (p = pList->head; p; p = p->next)
     {
-        if(p!=pList->head)
+        if (p != pList->head)
             printf(" ");
         printf("%d", p->value);
     }
@@ -56,7 +56,7 @@ void Delete(List *pList, ElementType number)
         if (p->value == number)
         {
             if (q)
-                q->next = p->next;
+                q->next = p->next; //不会出现野指针
             else
                 pList->head = p->next;
             free(p);
@@ -148,7 +148,7 @@ List *Merge(List *pL1, List *pL2, List *pL3)
     }
     return pL3;
 }
-List *Intersect(List *pL1, List *pL2, List *pL3)    //交集
+List *Intersect(List *pL1, List *pL2, List *pL3) //交集
 {
     Node *p1 = pL1->head;
     Node *p2 = pL2->head;
