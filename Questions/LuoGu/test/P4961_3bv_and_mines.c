@@ -19,10 +19,9 @@ int main(void)
     for (i = 0; i < n + 2; i++)
     {
         map[i] = (int *)malloc(sizeof(int) * (m + 2));
-        memset(map[i], -1, sizeof(int) * (m + 2)); /* 必须这样memset*/
+        /* deel with the border */
+        memset(map[i], -1, sizeof(int) * (m + 2)); /* 必须这样memset */
     }
-    /* deel with the border */
-
     /* draw the map */
     for (i = 1; i < n + 1; i++)
         for (j = 1; j < m + 1; j++)

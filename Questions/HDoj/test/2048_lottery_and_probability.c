@@ -17,7 +17,7 @@ int main(void)
         else
         {
             for (i = 2, n = 1; i <= tmp; i++)
-                n = n * i;
+                n = n * i; // 错的！
             probability[j] = 100 / (long double)n;
         }
     }
