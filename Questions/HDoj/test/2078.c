@@ -1,21 +1,39 @@
+/* 原来我连题都没读懂... */
 #include <stdio.h>
 #include <stdlib.h>
-int cmp(const void *a, const void *b);
 int main(void)
 {
-    int t, i, j, n, m, *a;
+    int t, i, n, m, tmp, ans = 100;
 
     scanf("%d", &t);
     while (t--)
     {
         scanf("%d%d", &n, &m);
-        a = (int *)malloc(n * sizeof(int));
         for (i = 0; i < n; i++)
-            scanf("%d", &a[i]);
-        qsort(a, n, sizeof(int), cmp);
+        {
+            scanf("%d", &tmp);
+            if (tmp < ans)
+                ans = tmp;
+        }
+        ans = (100 - ans) * (100 - ans);
+        printf("%d\n", ans);
     }
+
+    return 0;
 }
-int cmp(const void *a, const void *b)
-{
-    return (*(int *)a) > (*(int *)b);
-}
+/* 简单的数学，题目的代码很简单...
+例如：我们拿两个数和三个数做下比较
+100 x
+(100-x)^2=10000-200x+x^2 (1)
+100 y x
+(100-y)^2+(y-x)^2=(10000-200y+y^2)-(y^2-2xy+x^2) (2)
+两式相减
+(10000-200x+x^2)-((10000-200y+y^2)-(y^2-2xy+x^2))
+=-200x+200y-2y^2+2xy
+=200(y-x)+2y(x-y)
+=(200-2y)*(y-x)
+因为1 < y <= 100,所以结果大于等于0
+显然只要y不是100，实际y应该是个1~100的数，那么多一个数反而会使结果变小
+而题目要求最大效率，那我们只要拿最小的一个数就行了
+所以代码很简单，即(100-min)^2就是结果了
+*/
