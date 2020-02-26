@@ -73,7 +73,7 @@ static APosition DRotate_left(APosition k3)
 {
     /* Rotate between k1 and k2 */
     k3->left = SRotate_right(k3->left);
-    /* Rotate between k3 and k2*/
+    /* Rotate between k3 and k2 */
     return SRotate_left(k3);
 }
 static APosition SRotate_right(APosition k2)
@@ -90,7 +90,7 @@ static APosition DRotate_right(APosition k3)
 {
     /* Rotate between k1 and k2 */
     k3->right = SRotate_left(k3->right);
-    /* Rotate between k3 and k2*/
+    /* Rotate between k3 and k2 */
     return SRotate_right(k3);
 }
 static int AHeight(APosition p)

@@ -17,6 +17,7 @@ typedef BNode *Position;
 
 STree SMakeEmpty(STree t);
 STree SInsert(ElementType x, STree t);
+STree SDelete(ElementType x, STree t);
 STree PTraversal(STree t);
 Position SFind(ElementType x, STree t);
 Position SFindMax(STree t);
