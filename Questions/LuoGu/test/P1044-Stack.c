@@ -15,3 +15,4 @@ int main(void)
     printf("%d", ktl[n]);
 
     return 0;
+}

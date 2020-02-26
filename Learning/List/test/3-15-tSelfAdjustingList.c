@@ -6,8 +6,8 @@ int main(void)
 
     int i;
     for (i = 1; i <=10; i++)
-        SAdd(sa, i);
-    SPrint(SFind(sa, 11));
+        SAAdd(sa, i);
+    SAPrint(SAFind(sa, 11));
 
     return 0;
 }

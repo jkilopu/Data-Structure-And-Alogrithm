@@ -1,13 +1,6 @@
 #include "stackar.h"
 #include "fatal.h"
 
-struct StackRecord
-{
-    int Capacity;
-    int TopOfStack;
-    ElementType *Array;
-};
-
 int StIsEmpty( Stack S )
 {
     return S->TopOfStack == EmptyTOS;

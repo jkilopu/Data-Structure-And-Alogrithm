@@ -7,7 +7,9 @@ int main(void)
     for (i = 0; i < n; i++)
         DAdd(dlist, i);
     DPrint(dlist);
-    DDelete(dlist, 5);
+    // DDelete(dlist, 1);
+    // DPrint(dlist);
+    printf("%d\n", DPopHead(dlist));
     DPrint(dlist);
     DClear(dlist);
     return 0;

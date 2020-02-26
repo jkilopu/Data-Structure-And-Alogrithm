@@ -3,7 +3,7 @@
 DList CreateDList(void)
 {
     DList d;
-    d = (DList)malloc(2 * sizeof(DNode*));
+    d = (DList)malloc(2 * sizeof(DNode *));
     if (d == NULL)
         FatalError("Out of space!");
     DMakeEmpty(d);
@@ -23,28 +23,39 @@ void DAdd(DList dlist, ElementType number)
     p->value = number;
     p->next = NULL;
     if (DIsEmpty(dlist))
-    {
-        p->front = NULL;
         dlist->head = p;
-        dlist->tail = dlist->head;
-        dlist->tail->front = dlist->head;
-    }
     else
-    {
-        p->front = dlist->tail;
         dlist->tail->next = p;
-        dlist->tail = p;
-    }
+    p->front = dlist->tail;
+    dlist->tail = p; //尾巴总是为p
 }
 void DDelete(DList dlist, ElementType number)
 {
     DNode *p = DFind(dlist, number);
     if (p != NULL)
     {
-        p->front->next = p->next;
-        p->next->front = p->front;
+        if (p->front != NULL)
+            p->front->next = p->next;
+        else
+            dlist->head = p->next; // 头节点重设
+        if (p->next != NULL)
+            p->next->front = p->front;
+        else
+            dlist->tail = p->front; // 尾节点重设
         free(p);
     }
+}
+int DPopHead(DList dlist)
+{
+    DNode *p = dlist->head;
+    ElementType tmp;
+    if (p == NULL)
+        Error("Empty head!");
+    tmp = p->value;
+    dlist->head = dlist->head->next;
+    // dlist->head->front = NULL;
+    free(p);
+    return tmp;
 }
 void DSwap(DList dlist, ElementType number)
 {

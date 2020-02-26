@@ -10,17 +10,17 @@ Saar CreateSaar(int MaxArraySize)
     if (sa->ar == NULL)
         FatalError("Out of space!");
     sa->capacity = MaxArraySize;
-    SMakeEmpty(sa);
+    SAMakeEmpty(sa);
     return sa;
 }
-Saar SAdd(Saar sa, ElementType value)
+Saar SAAdd(Saar sa, ElementType value)
 {
-    if (SIsFull(sa))
+    if (SAIsFull(sa))
         Error("The sa is full!");
     else
         sa->ar[++sa->top] = value;
 }
-Saar SFind(Saar sa, ElementType value)
+Saar SAFind(Saar sa, ElementType value)
 {
     int i, j;
     ElementType temp;
@@ -38,7 +38,7 @@ Saar SFind(Saar sa, ElementType value)
     }
     return sa;
 }
-Saar SDispose(Saar sa)
+Saar SADispose(Saar sa)
 {
     if (sa != NULL)
     {
@@ -46,22 +46,22 @@ Saar SDispose(Saar sa)
         free(sa);
     }
 }
-void SPrint(Saar sa)
+void SAPrint(Saar sa)
 {
     int i;
     for (i = 0; i <= sa->top; i++)
         printf("%d ", sa->ar[i]);
     putchar('\n');
 }
-void SMakeEmpty(Saar sa)
+void SAMakeEmpty(Saar sa)
 {
     sa->top = EMPTYTOP;
 }
-bool SIsEmpty(Saar sa)
+bool SAIsEmpty(Saar sa)
 {
     return (sa->top == EMPTYTOP);
 }
-bool SIsFull(Saar sa)
+bool SAIsFull(Saar sa)
 {
     return sa->top == sa->capacity - 1;
 }

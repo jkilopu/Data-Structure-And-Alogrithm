@@ -16,13 +16,12 @@ struct _saar
 };
 typedef struct _saar* Saar;
 Saar CreateSaar(int MaxArraySize);
-Saar SAdd(Saar sa, ElementType value);
-Saar SFind(Saar sa, ElementType value);
-Saar SDispose(Saar sa);
-void SPrint(Saar sa);
-void SMakeEmpty(Saar sa);
-bool SIsEmpty(Saar sa);
-bool SIsFull(Saar sa);
-
+Saar SAAdd(Saar sa, ElementType value);
+Saar SAFind(Saar sa, ElementType value);
+Saar SADispose(Saar sa);
+void SAPrint(Saar sa);
+void SAMakeEmpty(Saar sa);
+bool SAIsEmpty(Saar sa);
+bool SAIsFull(Saar sa);
 
 #endif

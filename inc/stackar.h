@@ -4,8 +4,13 @@
 #include"fatal.h"
 #include <stdio.h>
 #include <stdlib.h>
-typedef int ElementType;
-struct StackRecord;
+typedef char ElementType;
+struct StackRecord
+{
+    int Capacity;
+    int TopOfStack;
+    ElementType *Array;
+};
 typedef struct StackRecord *Stack;
 
 #define EmptyTOS ( -1 )

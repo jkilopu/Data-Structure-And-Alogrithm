@@ -2,14 +2,16 @@
 #define _dlist_h
 
 #include <stdbool.h>
+#include <stdlib.h>
 #include "fatal.h"
+
 typedef int ElementType;
 typedef struct DNodeRecord
 {
     int value;
     struct DNodeRecord *next;
     struct DNodeRecord *front;
-}DNode;
+} DNode;
 struct DListRecord
 {
     DNode *head;
@@ -21,6 +23,7 @@ DList CreateDList(void);
 void DMakeEmpty(DList dlist);
 void DAdd(DList dlist, ElementType number);
 void DDelete(DList dlist, ElementType number);
+int DPopHead(DList dlist);
 DNode *DFind(const DList dlist, ElementType number);
 void DSwap(DList dlist, ElementType number);
 void DPrint(const DList dlist);
