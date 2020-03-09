@@ -25,7 +25,7 @@ int main(void)
         while (k - cloth <= len_cloth)
         {
             // 正向
-            if (strncmp(k, fragment, len_fragment) == 0)
+            if (strncmp(k, fragment, len_fragment) == 0) /* 其实可以用strstr()判断... */
             {
                 sum++;
                 k += len_fragment;
