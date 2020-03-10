@@ -11,6 +11,7 @@ Polynomial CreatePolynomial(void)
     return po;
 }
 Polynomial PAdd(Polynomial po, ElementType coefficient, ElementType exponent)
+/* 向多项式末尾添加一项 */
 {
     PNode *p = (PNode *)malloc(sizeof(PNode)), *q;
     if (p == NULL)
@@ -61,7 +62,8 @@ Polynomial PClearElement(Polynomial po)
     PMakeEmpty(po);
     return po;
 }
-Polynomial PMerge(Polynomial po1, Polynomial po2, Polynomial po3)           //不可以自己加自己，不能放到自己的位置
+Polynomial PMerge(Polynomial po1, Polynomial po2, Polynomial po3)/* 因为我设计的PAdd的来源和去处不能相同，只能用这样的畸形的办法 */
+/* 不可以自己加自己，不能放到自己的位置 */
 {
     PNode *p1 = po1->head;
     PNode *p2 = po2->head;
@@ -94,16 +96,17 @@ Polynomial PMerge(Polynomial po1, Polynomial po2, Polynomial po3)           //�
         PAdd(po3, p2->coefficient, p2->exponent);
         p2 = p2->next;
     }
-    return po3;             //未创建空间
+    return po3; // 未创建空间
 }
-Polynomial PMultiply(Polynomial po1, Polynomial po2, Polynomial po3) //可以自己参与运算，并指向自己
+Polynomial PMultiply(Polynomial po1, Polynomial po2, Polynomial po3) // 可以自己参与运算，并指向自己
+/* 奇怪的多项式相乘 */
 {
     int i, len = PLength(po2);
-    Polynomial poTmp[5]; /*5个存放位：存放位0、1用来储存po1被po2相邻两项乘后的多项式，
-                            存放位2储存0、1合并后多项式，存放位3、4轮流储存结果多项式*/
+    Polynomial poTmp[5]; /* 5个存放位：存放位0、1用来储存po1被po2相邻两项乘后的多项式，
+                            存放位2储存0、1合并后多项式，存放位3、4轮流储存结果多项式 */
     PNode *p = po1->head;
     PNode *q = po2->head;
-    PNode *p_backup = p, *q_backup = q, *tmp; //po1或po2与po3相同时，必须把po1或po2所指向的空间free
+    PNode *p_backup = p, *q_backup = q, *tmp; // po1或po2与po3相同时，必须把po1或po2所指向的空间free
     bool select, is_same1 = false, is_same2 = false;
 
     if (p == po3->head)
@@ -114,17 +117,17 @@ Polynomial PMultiply(Polynomial po1, Polynomial po2, Polynomial po3) //可以自
         poTmp[i] = CreatePolynomial();
     for (i = 0, select = false; q; i++)
     {
-        //填充0、1
+        // 填充0、1
         while (p)
         {
             PAdd(poTmp[i], p->coefficient * q->coefficient, p->exponent + q->exponent);
             p = p->next;
         }
-        //待0、1填充后，合并后放至2处。落单的与空多项式合并
+        // 待0、1填充后，合并后放至2处。落单的与空多项式合并
         if (i % 2 == 1 || (i == len - 1 && i % 2 == 0))
         {
             PMerge(poTmp[0], poTmp[1], poTmp[2]);
-            //交替使用3、4
+            // 交替使用3、4
             if (select == false)
             {
                 PMerge(poTmp[2], poTmp[3], poTmp[4]);
@@ -137,13 +140,14 @@ Polynomial PMultiply(Polynomial po1, Polynomial po2, Polynomial po3) //可以自
                 PClearElement(poTmp[4]);
                 select = false;
             }
-            //清空0、1
+            // 清空0、1
             PClearElement(poTmp[0]), PClearElement(poTmp[1]), PClearElement(poTmp[2]);
             i = 0;
         }
         p = po1->head;
         q = q->next;
     }
+    /* 判断结果多项式在3还是4中 */
     if (select == false)
     {
         po3->head = poTmp[3]->head;
@@ -157,20 +161,20 @@ Polynomial PMultiply(Polynomial po1, Polynomial po2, Polynomial po3) //可以自
         PClear(poTmp[3]);
     }
     PClear(poTmp[0]), PClear(poTmp[1]), PClear(poTmp[2]);
-    //判断po1或po2与po3是否相同
+    // 判断po1或po2与po3是否相同
     if (is_same1)
         PNClear(p_backup);
     else if (is_same2)
         PNClear(q_backup);
 
-    return po3; //最终创建了一片空间，po3指向该片空间
+    return po3; // 最终创建了一片空间，po3指向该片空间
 }
-Polynomial PPow(Polynomial po, unsigned int N, Polynomial po_output) //使用迭代，递归的做法太难受
+Polynomial PPow(Polynomial po, unsigned int N, Polynomial po_output) // 使用迭代，递归的做法太难受
 {
-    //清空po_output，仅保留指针
+    // 清空po_output，仅保留指针
     PClearElement(po_output);
     PAdd(po_output, 1, 0);
-    //复制po，防止po被修改
+    // 复制po，防止po被修改
     Polynomial poTmp = CreatePolynomial();
     PCopy(poTmp, po);
     while (N > 0)
