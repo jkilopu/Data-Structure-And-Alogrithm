@@ -48,6 +48,9 @@ int main(void)
         }
     }
 
+    free(a);
+    free(isMains);
+    free(sorted);
     return 0;
 }
 
