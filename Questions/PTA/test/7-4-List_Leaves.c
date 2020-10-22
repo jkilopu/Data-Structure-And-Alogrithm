@@ -1,3 +1,4 @@
+/* 自顶向下，从左到右，使用二叉树的层次遍历 */
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
