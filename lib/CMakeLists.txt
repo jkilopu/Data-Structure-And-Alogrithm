@@ -1,5 +1,5 @@
 project(myc)
-cmake_minimum_required(VERSION 3.10.0)
+cmake_minimum_required(VERSION 3.12.0)
 
 # 输出路径(与可执行文件在同一文件夹中)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
