@@ -1,13 +1,6 @@
 #include "queue.h"
 #include "fatal.h"
-struct QueueRecord
-{
-    unsigned int Capacity;
-    unsigned int Front;
-    unsigned int Rear;
-    unsigned int Size;
-    ElementType *Array;
-};
+
 bool IsEmpty(Queue Q)
 {
     return Q->Size == 0;
@@ -37,19 +30,14 @@ Queue CreateQueue(int MaxElements)
 void DisposeQueue(Queue Q)
 {
     free(Q->Array);
+    Q->Array = NULL;
     free(Q);
 }
 void MakeEmpty(Queue Q)
 {
     Q->Size = 0;
-    Q->Front = 1;
+    Q->Front = 0;
     Q->Rear = 0;
-}
-static int Succ(int Position, Queue Q)
-{
-    if (++Position == Q->Capacity)
-        Position = 0;
-    return Position;
 }
 void Enqueue(ElementType X, Queue Q)
 {
@@ -58,8 +46,8 @@ void Enqueue(ElementType X, Queue Q)
     else
     {
         Q->Size++;
-        Q->Rear = Succ(Q->Rear, Q);
         Q->Array[Q->Rear] = X;
+        Q->Rear = (Q->Rear + 1) % Q->Capacity;
     }
 }
 void Dequeue(Queue Q)
@@ -69,7 +57,7 @@ void Dequeue(Queue Q)
     else
     {
         Q->Size--;
-        Q->Front = Succ(Q->Front, Q);
+        Q->Front = (Q->Front + 1) % Q->Capacity; 
     }
 }
 ElementType Front(Queue Q)
@@ -88,7 +76,7 @@ ElementType FrontAndDequeue(Queue Q)
     {
         Q->Size--;
         ret = Q->Array[Q->Front];
-        Q->Front = Succ(Q->Front, Q);
+        Q->Front = (Q->Front + 1) % Q->Capacity;
         return ret;
     }
 }
