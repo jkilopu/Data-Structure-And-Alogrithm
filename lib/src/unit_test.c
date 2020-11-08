@@ -4,6 +4,15 @@
 
 static bool passed = true;
 
+void check_int(const char *message, int expected, int actual)
+{
+    if (expected != actual)
+    {
+        fprintf(stderr, "*%s* expected: %d, actual: %d\n", message, expected, actual);
+        passed = false;
+    }
+}
+
 void check_unsigned(const char *message, unsigned int expected, unsigned int actual)
 {
     if (expected != actual)
