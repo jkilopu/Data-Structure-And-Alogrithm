@@ -1,6 +1,9 @@
 #include "huffman_tree.h"
+#include "queue.h"
 #include <stdio.h>
 #include <stdlib.h>
+
+static unsigned int num_nodes;
 
 H_Tree *create_huffman_tree(Weighted_Char weighted_chars[], int num)
 {
@@ -10,12 +13,13 @@ H_Tree *create_huffman_tree(Weighted_Char weighted_chars[], int num)
         return NULL;
     }
     H_Node **nodes = create_huffman_nodes(weighted_chars, num);
+    num_nodes = 2 * num - 1;
 
     int min_1, min_2;
     for (int i = 0; i < num - 1; i++)
     {
         // 一步步缩小规模
-        select(nodes, num - i, &min_1, &min_2);
+        select_2_min(nodes, num - i, &min_1, &min_2);
         H_Node *n = malloc(sizeof(H_Node));
         n->right = nodes[min_1];
         n->left = nodes[min_2];
@@ -30,7 +34,7 @@ H_Tree *create_huffman_tree(Weighted_Char weighted_chars[], int num)
     return h_tree;
 }
 
-static H_Node **create_huffman_nodes(Weighted_Char weighted_chars[], int num)
+H_Node **create_huffman_nodes(Weighted_Char weighted_chars[], int num)
 {
     H_Node **nodes = malloc(sizeof(H_Node *) * num);
     for (int i = 0; i < num; i++)
@@ -45,18 +49,32 @@ static H_Node **create_huffman_nodes(Weighted_Char weighted_chars[], int num)
 
 void print_huffman_tree_weighted_char(H_Tree *h_tree)
 {
-    if (h_tree == NULL)
-        return;
-    print_huffman_tree_weighted_char(h_tree->left);
-    print_huffman_tree_weighted_char(h_tree->right);
-    if (h_tree->left == NULL && h_tree->right == NULL)
-        printf("%c %d\n", h_tree->wc.val, h_tree->wc.weight);
-    else
-        printf("%d\n", h_tree->wc.weight);
+    Queue q = CreateQueue(num_nodes, sizeof(H_Node *));
+    Enqueue(&h_tree, sizeof(H_Tree *), q);
+
+    unsigned int next_level = 1;
+    while(!IsEmpty(q))
+    {
+        H_Node *node = (*(H_Node **)FrontAndDequeue(sizeof(H_Node *), q));
+        if (is_pow_2(next_level))
+            putchar('\n');
+        if (node->left == NULL && node->right == NULL)
+            printf("%c-%d", node->wc.val, node->wc.weight);
+        else
+        {
+            printf("%d", node->wc.weight);
+            Enqueue(&node->left, sizeof(H_Node *),  q);
+            Enqueue(&node->right, sizeof(H_Node *), q);
+        }
+        next_level++;
+        putchar('\t');
+    }
+
+    DisposeQueue(q);
 }
 
-/* 找到权重的最小值和次小值(不重复) */
-static void select(H_Node **nodes, int num, int *p_min_1, int *p_min_2)
+/* 找到权重的最小值和次小值(不重复)，返回其下标 */
+void select_2_min(H_Node **nodes, int num, int *p_min_1, int *p_min_2)
 {
     if (num <= 1)
     {
@@ -78,4 +96,10 @@ static void select(H_Node **nodes, int num, int *p_min_1, int *p_min_2)
     }
     *p_min_1 = min_1;
     *p_min_2 = min_2;
+}
+
+/* 判断一个正整数是否是2的整次幂（0也行） */
+inline static bool is_pow_2(unsigned int a)
+{
+    return !(a & (a - 1));
 }
