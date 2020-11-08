@@ -5,13 +5,15 @@
 #include <stdbool.h>
 #define MAXSIZE 50
 #define TON(CH) (CH - '0')
+
 int Caculate(int a, int b, char ch);
 bool IsRightParenthesis(char ch);
 bool IsLeftParenthesis(char ch);
 int GetPriority(char ch);
+
 int main(void)
 {
-    char test[] = "2*(1+3-2)";
+    char test[] = "1+(5+(3-2)*3)/4-2";
     Stack postfix;
     Stack operator;
     int i, j, m, n, a, b;
@@ -49,16 +51,16 @@ int main(void)
             Pop(operator);
         }
         //遇到运算符比较优先级
-        else if ((m = GetPriority(test[i])) < (n = GetPriority(Top(operator))))
+        else if ((m = GetPriority(test[i])) <= (n = GetPriority(Top(operator))))
         {
-            while ((m = GetPriority(test[i])) < (n = GetPriority(Top(operator))))
+            while (!StIsEmpty(operator) && (m = GetPriority(test[i])) <= (n = GetPriority(Top(operator))))
             {
                 ch = TopAndPop(operator);
                 a = TopAndPop(postfix);
                 b = TopAndPop(postfix);
                 Push(Caculate(a, b, ch), postfix);
-                Push(test[i], operator);
             }
+            Push(test[i], operator);
         }
         else
             Push(test[i], operator);
@@ -80,6 +82,7 @@ int main(void)
 
     return 0;
 }
+
 int Caculate(int a, int b, char ch)
 {
     int ret;
@@ -101,14 +104,17 @@ int Caculate(int a, int b, char ch)
     }
     return ret;
 }
+
 bool IsLeftParenthesis(char ch)
 {
     return ch == '(';
 }
+
 bool IsRightParenthesis(char ch)
 {
     return ch == ')';
 }
+
 int GetPriority(char ch)
 {
     if (ch == '+' || ch == '-')
