@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "list.h"
+#include "slist.h"
 #include "doubly-list.h"
 int main(void)
 {

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include "list.h"
+#include "slist.h"
 int main(void)
 {
     List L1, L2, L3, L4;
