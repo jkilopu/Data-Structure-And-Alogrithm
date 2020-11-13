@@ -2,40 +2,50 @@
 #include "fatal.h"
 #include <string.h>
 
-bool IsEmpty(Queue Q)
+bool IsEmpty(const Queue Q)
 {
     return Q->Size == 0;
 }
 
-bool IsFull(Queue Q)
+bool IsFull(const Queue Q)
 {
     return Q->Size == Q->Capacity;
 }
 
-Queue CreateQueue(int MaxElements, size_t elem_size)
+Queue CreateQueue(const int MaxElements, size_t elem_size)
 {
-    Queue Q;
-    if (MaxElements < MinQueueSize)
-        Error("Queue len is too short");
-
-    Q = (Queue)malloc(sizeof(struct QueueRecord));
+    Queue Q = (Queue)malloc(sizeof(struct QueueRecord));
     if (Q == NULL)
         FatalError("Out of space!!!");
 
-    Q->Array = (void *)malloc(elem_size * MaxElements);
-    if (Q->Array == NULL)
-        FatalError("Out of space!!!");
-    Q->Capacity = MaxElements;
-    MakeEmpty(Q);
+    CreateLocalQueue(Q, MaxElements, elem_size);
 
     return Q;
 }
 
+void CreateLocalQueue(struct QueueRecord *LQ, const int MaxElements, const size_t elem_size)
+{
+    if (MaxElements < MinQueueSize)
+        Error("Queue len is too short");
+
+    LQ->elem_size = elem_size;
+    LQ->Capacity = MaxElements;
+    LQ->Array = (void *)malloc(elem_size * MaxElements);
+    if (LQ->Array == NULL)
+        FatalError("Out of space!!!");
+    MakeEmpty(LQ);
+}
+
 void DisposeQueue(Queue Q)
 {
-    free(Q->Array);
-    Q->Array = NULL;
+    DisposeLocalQueue(Q);
     free(Q);
+}
+
+void DisposeLocalQueue(struct QueueRecord *LQ)
+{
+    free(LQ->Array);
+    LQ->Array = NULL;
 }
 
 void MakeEmpty(Queue Q)
@@ -45,14 +55,14 @@ void MakeEmpty(Queue Q)
     Q->Rear = 0;
 }
 
-void Enqueue(void *X, size_t elem_size, Queue Q)
+void Enqueue(const void *X, Queue Q)
 {
     if (IsFull(Q))
         Error("Full queue.");
     else
     {
         Q->Size++;
-        memcpy(((char *)Q->Array + elem_size * Q->Rear), X, elem_size);
+        memcpy(((char *)Q->Array + Q->elem_size * Q->Rear), X, Q->elem_size);
         Q->Rear = (Q->Rear + 1) % Q->Capacity;
     }
 }
@@ -68,21 +78,21 @@ void Dequeue(Queue Q)
     }
 }
 
-void *Front(size_t elem_size, Queue Q)
+void *Front(const Queue Q)
 {
     if (IsEmpty(Q))
         Error("Empty queue.");
     else
-        return (void *)((char *)Q->Array + elem_size * Q->Front);
+        return (void *)((char *)Q->Array + Q->elem_size * Q->Front);
 }
 
-void *FrontAndDequeue(size_t elem_size, Queue Q)
+void *FrontAndDequeue(Queue Q)
 {
     if (IsEmpty(Q))
         Error("Empty queue.");
     else
     {
-        void *ret = (void *)((char *)Q->Array + elem_size * Q->Front);
+        void *ret = (void *)((char *)Q->Array + Q->elem_size * Q->Front);
         Q->Size--;
         Q->Front = (Q->Front + 1) % Q->Capacity;
         return ret;
