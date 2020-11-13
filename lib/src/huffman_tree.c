@@ -54,40 +54,42 @@ H_Node **create_huffman_nodes(Weighted_Char weighted_chars[], int num)
 /* 层次遍历打印哈夫曼树 */
 void print_huffman_tree_weighted_char(H_Tree *h_tree)
 {
-    Queue q = CreateQueue(num_nodes, sizeof(H_Node *));
-    Enqueue(&h_tree, sizeof(H_Tree *), q);
+    struct QueueRecord qr;
+    CreateLocalQueue(&qr, num_nodes, sizeof(H_Node *));
+    Enqueue(&h_tree, &qr);
 
-    unsigned int next_level = 1;
-    while(!IsEmpty(q))
+    while(!IsEmpty(&qr))
     {
-        H_Node *node = (*(H_Node **)FrontAndDequeue(sizeof(H_Node *), q));
-        if (is_pow_2(next_level))
-            putchar('\n');
-        if (node->left == NULL && node->right == NULL)
-            printf("%c-%d", node->wc.ch, node->wc.weight);
-        else
+        unsigned int level_elem_num = qr.Size;
+        /* 循环结束条件：该层遍历完毕 */
+        for (unsigned int i = 0; i < level_elem_num; i++)
         {
-            printf("%d", node->wc.weight);
-            Enqueue(&node->left, sizeof(H_Node *),  q);
-            Enqueue(&node->right, sizeof(H_Node *), q);
+            H_Node *node = (*(H_Node **)FrontAndDequeue(&qr));
+            if (node->left == NULL && node->right == NULL)
+                printf("%c-%d", node->wc.ch, node->wc.weight);
+            else
+            {
+                printf("%d", node->wc.weight);
+                Enqueue(&node->left, &qr);
+                Enqueue(&node->right, &qr);
+            }
+            putchar('\t');
         }
-        next_level++;
-        putchar('\t');
+        putchar('\n');
     }
-    putchar('\n');
 
-    DisposeQueue(q);
+    DisposeLocalQueue(&qr);
 }
 
 /* 创建哈夫曼树对应的编码表 */
-Bit_Array *create_huffman_code(H_Tree *h_tree)
+Bit_Array *create_huffman_code_table(H_Tree *h_tree)
 {
     Bit_Array *ba = calloc(NUM_CHAR, sizeof(Bit_Array));
-    create_huffman_code_recursive_helper(h_tree, 0, 0, ba);
+    create_huffman_code_table_recursive_helper(h_tree, 0, 0, ba);
     return ba;    
 }
 
-static void create_huffman_code_recursive_helper(H_Tree *h_tree, unsigned int code, unsigned int len, Bit_Array *ba)
+static void create_huffman_code_table_recursive_helper(H_Tree *h_tree, unsigned int code, unsigned int len, Bit_Array *ba)
 {
     if (h_tree->left == NULL && h_tree->right == NULL)
     {
@@ -101,8 +103,8 @@ static void create_huffman_code_recursive_helper(H_Tree *h_tree, unsigned int co
                 ((ba + ch)->arr)[len / 8] |= 1 << (len % 8); 
         return;
     }
-    create_huffman_code_recursive_helper(h_tree->left, code << 1, len + 1, ba);
-    create_huffman_code_recursive_helper(h_tree->right, (code << 1) + 1, len + 1, ba);
+    create_huffman_code_table_recursive_helper(h_tree->left, code << 1, len + 1, ba);
+    create_huffman_code_table_recursive_helper(h_tree->right, (code << 1) + 1, len + 1, ba);
 }
 
 /* 打印哈夫曼树中每个字符及其编码
@@ -120,6 +122,27 @@ void print_huffman_code(H_Tree *h_tree, unsigned int code, unsigned int length)
     }
     print_huffman_code(h_tree->left, code << 1, length + 1);           // 往左，该位为0
     print_huffman_code(h_tree->right, (code << 1) + 1, length + 1);    // 往右，该位为1
+}
+
+/* 根据编码表创建位数组 */
+Bit_Array *create_huffman_code(char *seq, unsigned int num, Bit_Array *ba_table)
+{
+    Bit_Array *ba = malloc(sizeof(Bit_Array) * num);
+    for (int i = 0; i < num; i++)
+        ba[i] = ba_table[seq[i]];
+    return ba;
+}
+
+/* 打印位数组 */
+void print_bit_array(Bit_Array *ba)
+{
+    unsigned int len = ba->len;
+    unsigned int bytes_num = len / 8 + (len % 8 ? 1 : 0);
+    for (int j = 0; j < bytes_num; j++)
+    {
+        unsigned int code = (ba->arr)[j];
+        print_bin(code, (j == bytes_num - 1 ? len % 8 : 8));
+    }
 }
 
 /* 打印code的二进制格式 */
@@ -166,15 +189,15 @@ inline static bool is_pow_2(unsigned int a)
 }
 
 /* 删除编码表 */
-void destroy_huffman_code(Bit_Array *ba)
+void destroy_huffman_code_table(Bit_Array *ba_table)
 {
     for (int i = 0; i < NUM_CHAR; i++)
-        if (ba[i].arr)
+        if (ba_table[i].arr)
         {
-            free(ba[i].arr);
-            ba[i].arr = NULL;
+            free(ba_table[i].arr);
+            ba_table[i].arr = NULL;
         }
-    free(ba);
+    free(ba_table);
 }
 
 /* 删除哈夫曼树 */
