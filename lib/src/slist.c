@@ -14,14 +14,28 @@ SList CreateSList(const size_t elem_size)
     return new_slist;
 }
 
+Printable_SList CreatePrintableSList(const size_t elem_size, FuncPrintData func_print_data)
+{
+    Printable_SList new_pslist = malloc(sizeof(struct _printable_s_list));
+    if (new_pslist == NULL)
+        FatalError("CreatePrintableSList: Out of space!!!");
+    CreateLocalPrintableSList(new_pslist, elem_size, func_print_data);
+}
+
 void CreateLocalSList(struct _s_list *slist, const size_t elem_size)
 {
     slist->head = slist->tail = NULL;
     slist->elem_size = elem_size;
 }
 
+void CreateLocalPrintableSList(struct _printable_s_list *pslist, const size_t elem_size, FuncPrintData func_print_data)
+{
+    CreateLocalSList((struct _s_list *) pslist, elem_size);
+    pslist->func_print_data = func_print_data;
+}
+
 /*
- * 加入一个结点到链表尾
+ * 添加一个结点到链表末尾
  */
 void AddTailSList(SList slist, const void *data)
 {
@@ -119,6 +133,17 @@ void ReverseSList(SList slist)
     prev = NULL;
 }
 
+void PrintSList(const Printable_SList pslist)
+{
+    for (Node p = ((SList) pslist)->head; p; p = p->next)
+    {
+        pslist->func_print_data((SList) p->data);
+        if (p->next != NULL)
+            putchar(' ');
+    }
+    putchar('\n');
+}
+
 bool SwapSList(SList slist, unsigned int pos)
 {
     Node p = slist->head, q, prev;
@@ -188,16 +213,16 @@ void IntersectLocalSList(const SList s1, const SList s2, struct _s_list *s3, int
     /* 逐个比较 */
     while (p1)
     {
-        while (cmp(p1->data, p2->data) != 0 && p2)
+        while (p2 && cmp(p1->data, p2->data) != 0)
             p2 = p2->next;
-        if (!p2)
+        if (p2)
             AddTailSList(s3, p1->data);
         p1 = p1->next;
     }
 }
 
 /* 最低效率的冒泡排序 */
-void BsortSList(SList slist, int (*cmp)(void *a, void *b)) //最低效率的冒泡排序
+void BSortSList(SList slist, int (*cmp)(void *a, void *b)) //最低效率的冒泡排序
 {
     for (Node p = slist->head; p; p = p->next)
     {
@@ -211,6 +236,18 @@ void BsortSList(SList slist, int (*cmp)(void *a, void *b)) //最低效率的冒�
             }
         }
     }
+}
+
+void DisposeLocalPrintableSList(struct _printable_s_list *pslist)
+{
+    DisposeLocalSList((struct _s_list *) pslist);
+    pslist->func_print_data = NULL;
+}
+
+void DisposePrintableSList(Printable_SList pslist)
+{
+    DisposeLocalPrintableSList(pslist);
+    free(pslist);
 }
 
 void DisposeLocalSList(struct _s_list *slist)
