@@ -5,8 +5,6 @@
 #include <stdbool.h>
 #include <ctype.h>
 
-#define MinQueueSize (5)
-
 struct QueueRecord
 {
     unsigned int Capacity;

@@ -25,9 +25,6 @@ Queue CreateQueue(const int MaxElements, size_t elem_size)
 
 void CreateLocalQueue(struct QueueRecord *LQ, const int MaxElements, const size_t elem_size)
 {
-    if (MaxElements < MinQueueSize)
-        Error("Queue len is too short");
-
     LQ->elem_size = elem_size;
     LQ->Capacity = MaxElements;
     LQ->Array = (void *)malloc(elem_size * MaxElements);
