@@ -1,24 +1,19 @@
 #include "slist.h"
 #include "fatal.h"
 #include <stdio.h>
-#include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
 
 SList CreateSList(const size_t elem_size)
 {
-    SList new_slist = malloc(sizeof(struct _s_list));
-    if (new_slist == NULL)
-        FatalError("CreateSList: Out of space!!!");
+    SList new_slist = malloc_fatal(sizeof(struct _s_list), "CreateSList");
     CreateLocalSList(new_slist, elem_size);
     return new_slist;
 }
 
 Printable_SList CreatePrintableSList(const size_t elem_size, FuncPrintData func_print_data)
 {
-    Printable_SList new_pslist = malloc(sizeof(struct _printable_s_list));
-    if (new_pslist == NULL)
-        FatalError("CreatePrintableSList: Out of space!!!");
+    Printable_SList new_pslist = malloc_fatal(sizeof(struct _printable_s_list), "CreatePrintableSList");
     CreateLocalPrintableSList(new_pslist, elem_size, func_print_data);
 }
 
@@ -39,26 +34,22 @@ void CreateLocalPrintableSList(struct _printable_s_list *pslist, const size_t el
  */
 void AddTailSList(SList slist, const void *data)
 {
-    Node node = (Node)malloc(sizeof(struct _node));
-    if (node == NULL)
-        FatalError("AddSList: Out of space!!!");
-    node->data = malloc(slist->elem_size);
-    if (node->data == NULL)
-        FatalError("AddSList: Out of space!!!");
+    Node new_node = malloc_fatal(sizeof(struct _node), "AddTailSList" " - " "new_node");
+    new_node->data = malloc_fatal(slist->elem_size, "AddTailSList" " - " "new_node->data");
 
     /* Copy */
-    memcpy(node->data, data, slist->elem_size);
-    node->next = NULL;
+    memcpy(new_node->data, data, slist->elem_size);
+    new_node->next = NULL;
 
     /* Attach */
     if (slist->head)
     {
-        slist->tail->next = node;
-        slist->tail = node;
+        slist->tail->next = new_node;
+        slist->tail = new_node;
     }
     else
     {
-        slist->head = node;
+        slist->head = new_node;
         slist->tail = slist->head;
     }
 }
@@ -95,6 +86,17 @@ void DeleteNodeSList(SList slist, const void *data)
     }
 }
 
+void InsertHeadSList(SList slist, const void *data)
+{
+    Node new_node = malloc_fatal(sizeof(struct _node), "AddSList" " - " "new_node");
+    new_node->data = malloc_fatal(slist->elem_size, "AddSList" " - " "new_node->data");
+    memcpy(new_node->data, data, slist->elem_size);
+    new_node->next = slist->head;
+    slist->head = new_node;
+    if (slist->tail == NULL)
+        slist->tail = new_node;
+}
+
 /*
  * 根据node->data，在找到的第一个结点后插入一个结点，返回true
  * 若没找到，什么也不做，返回false
@@ -104,7 +106,8 @@ bool InsertAfterSList(SList slist, const void *found_data, const void *insert_da
     Node found_node;
     if (found_node = FindNodeSList(slist, found_data))
     {
-        Node new_node = (Node)malloc(sizeof(struct _node));
+        Node new_node = malloc_fatal(sizeof(struct _node), "InsertAfterSList" " - " "new_node");
+        new_node->data = malloc_fatal(slist->elem_size, "InsertAfterSList" " - " "new_node->data");
         memcpy(new_node->data, insert_data, slist->elem_size);
         new_node->next = found_node->next;
         found_node->next = new_node;
@@ -118,7 +121,7 @@ void ReverseSList(SList slist)
     Node p, next, prev;
     if (slist->head == NULL || slist->head->next == NULL)
         return;
-    prev = (Node)malloc(sizeof(struct _node));
+    prev = malloc_fatal(sizeof(struct _node), "ReverseSList");
     prev->next = slist->head;
     p = slist->head;
     while (p->next != NULL)
